@@ -555,8 +555,8 @@
       "sha256": "0fb2a8fe0ef78ad31d92b7d5f23187a38cee8affe58301a01e0a232746b95017"
     },
     "README.md": {
-      "bytes": 7041,
-      "sha256": "bdcad81a17f7a0ac36c831c772731a11dfd2664e99ada3369be8460b4e4523bd"
+      "bytes": 7112,
+      "sha256": "bf1f6accc5a0059bfbb31b42a21abb03204b5f5306ce27ea4f4a2db6b9d09eae"
     },
     "report/.gitkeep": {
       "bytes": 0,
@@ -5705,6 +5705,14 @@
     "src/pl/hls/pw/vendor/README.md": {
       "bytes": 3965,
       "sha256": "0361fdebdfe320ae13a60614ffc6e2a4e871e9e642745125161e055afa2152d5"
+    },
+    "report/design_report.docx": {
+      "bytes": 5177038,
+      "sha256": "04df9a56f2bc0ee727effc221ceb60c9c8c5721379d49b47adac958ce10b0763"
+    },
+    "report/llm_collaboration_records.zip": {
+      "bytes": 1608534,
+      "sha256": "c35627ff5ad50e7492f5b60b3e264b181de90acccff6dd14a7a77bf29f364678"
     }
   }
 }

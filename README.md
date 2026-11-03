@@ -2,7 +2,7 @@
 
 AX7020（XC7Z020-2CLG400I）裸机 PS + PL 工程，包含采集协议、心肺音预处理、双模型推理和 LCD 界面。PS 承担协议/CRC、预处理、调度和绘图；PL 包含 PW、八路 FP32 CNN、Linear、LCD FIFO/SPI、按键与采集统计/波形分桶。ESP021 是配套 BLE/UART 桥。
 
-仓库采用 2026-11-03 normal 八路版本，提供源码、测试数据、离线构建入口、配套固件和验证记录。设计报告与大模型协作记录尚未收录，`report/` 目前为空目录占位。
+仓库采用 2026-11-03 normal 八路版本，提供源码、测试数据、离线构建入口、配套固件和验证记录。设计报告见 [report/design_report.docx](report/design_report.docx)，大模型协作记录见 [report/llm_collaboration_records.zip](report/llm_collaboration_records.zip)。
 
 ## 目录
 
@@ -21,7 +21,7 @@ Github/
 ├── data/                  CNN 回放输入与黄金参考输出归档
 ├── skill/                 可复用 zynq-validation 技能包及使用入口
 │   └── README.md
-└── report/                设计报告与大模型协作记录（尚未收录）
+└── report/                设计报告与大模型协作记录
 ```
 
 ## 固件版本
