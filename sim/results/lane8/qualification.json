@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "rtl_transactions": 25,
+  "mismatched_words": 0,
+  "fp32_lanes": 8,
+  "pipeline_ii": 1,
+  "host_legal_cases": 26,
+  "invalid_cases": 7,
+  "resource_estimates": {
+    "BRAM_18K": 138,
+    "DSP": 62,
+    "FF": 15904,
+    "LUT": 30435
+  },
+  "cycle_comparison": [
+    {
+      "shape": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_lane_cycles": 485,
+      "eight_lane_cycles": 515,
+      "reduction_percent": -6.185567010309279,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        1,
+        3,
+        3,
+        3
+      ],
+      "four_lane_cycles": 1094,
+      "eight_lane_cycles": 1154,
+      "reduction_percent": -5.484460694698345,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        3,
+        2,
+        5,
+        17
+      ],
+      "four_lane_cycles": 3393,
+      "eight_lane_cycles": 2118,
+      "reduction_percent": 37.57736516357206,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        32,
+        2,
+        3,
+        65
+      ],
+      "four_lane_cycles": 35249,
+      "eight_lane_cycles": 43619,
+      "reduction_percent": -23.745354478141234,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        64,
+        2,
+        3,
+        33
+      ],
+      "four_lane_cycles": 35470,
+      "eight_lane_cycles": 43990,
+      "reduction_percent": -24.020298844093602,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        128,
+        2,
+        3,
+        59
+      ],
+      "four_lane_cycles": 95695,
+      "eight_lane_cycles": 125980,
+      "reduction_percent": -31.647421495375937,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        3,
+        3,
+        7,
+        61
+      ],
+      "four_lane_cycles": 7038,
+      "eight_lane_cycles": 4983,
+      "reduction_percent": 29.198635976129584,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        2,
+        3,
+        5,
+        63
+      ],
+      "four_lane_cycles": 4934,
+      "eight_lane_cycles": 3374,
+      "reduction_percent": 31.61734900689096,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        3,
+        3,
+        7,
+        65
+      ],
+      "four_lane_cycles": 10679,
+      "eight_lane_cycles": 6839,
+      "reduction_percent": 35.95842307332148,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        2,
+        3,
+        5,
+        129
+      ],
+      "four_lane_cycles": 14789,
+      "eight_lane_cycles": 9134,
+      "reduction_percent": 38.23787950503753,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        1,
+        2,
+        5,
+        257
+      ],
+      "four_lane_cycles": 11309,
+      "eight_lane_cycles": 8804,
+      "reduction_percent": 22.15049960208684,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        128,
+        4,
+        3,
+        59
+      ],
+      "four_lane_cycles": 132888,
+      "eight_lane_cycles": 163203,
+      "reduction_percent": -22.81244356149539,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        32,
+        8,
+        7,
+        65
+      ],
+      "four_lane_cycles": 188373,
+      "eight_lane_cycles": 108273,
+      "reduction_percent": 42.52201748658248,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        128,
+        8,
+        5,
+        59
+      ],
+      "four_lane_cycles": 414359,
+      "eight_lane_cycles": 250634,
+      "reduction_percent": 39.51283790143329,
+      "captured_input": false
+    },
+    {
+      "shape": [
+        128,
+        2,
+        16,
+        59
+      ],
+      "four_lane_cycles": 427810,
+      "eight_lane_cycles": 323298,
+      "reduction_percent": 24.429536476473203,
+      "captured_input": true
+    }
+  ],
+  "source_sha256": {
+    "tools/cnn_lane8_repair_v2.py": "01fe575335d0005c255c355ec30e86ac82e69083e6c16dd7c594cc8f7e6a9ef2",
+    "build_work/lung_cnn_lane8_20261101/generation.json": "4c43787514aa226580bbcb8b0c7143d46859f4e811160cbf977680789b4a3047",
+    "build_work/lung_cnn_lane8_20261101/host_receipt.json": "44ac101b62c848059624580fc36ec6de4ce8e058bd6ffb7a7ef2e00aa402db86",
+    "build_work/lung_cnn_lane8_20261101/hls_receipt.json": "5cca3d41ecea224f4c382e9a00c0f7e32dc94fdf3d520d39cad3cf8affc5cceb",
+    "build_work/lung_cnn_lane8_20261101/hls_intent.json": "96ec49627758c66ef7467746d2c1443776a28dcc497ecdc135fcf635fd763a9f",
+    "build_work/lung_cnn_lane8_20261101/software/receipt.json": "b1d89f194b26155e581eccc15b227dca7669e8e5025cc5f245634f4665938206",
+    "build_work/lung_cnn_lane8_20261101/run_hls.py": "cc17c7eb1179fd7bd771acce79f15bd101e16482af17ffea4dbb2cef65d308ca",
+    "build_work/lung_cnn_lane8_20261101/hls/conv/solution/.autopilot/db/conv.pp.0.cpp": "3b919e8fff1f609ef01456573c06a59f2f4701d2f266e0b33be3a84d1bbb2a16",
+    "build_work/lung_cnn_lane8_20261101/hls/conv/solution/syn/report/compute_channels_Pipeline_mac_c_mac_x_mac_csynth.rpt": "da71f9a3af7da5a99a857934820a0a90f75f45e75d21a7d7a399bd29717091b5"
+  },
+  "limits": "Bounded RTL cycles and HLS estimates only; no full-system resource/timing or physical speed claim."
+}

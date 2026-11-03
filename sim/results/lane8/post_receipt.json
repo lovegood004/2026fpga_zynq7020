@@ -1,0 +1,394 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "simulator_optimization": "O3",
+  "cases": 25,
+  "mismatched_words": 0,
+  "broken_baseline_reproduced": [
+    0,
+    0,
+    12
+  ],
+  "legacy_cases": 3,
+  "legacy_mismatched_words": 0,
+  "details": [
+    {
+      "port": "mem",
+      "transaction": 0,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 1,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 2,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 3,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 4,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 5,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 6,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 7,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 8,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 9,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 10,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 11,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 12,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 13,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 14,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 15,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 16,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 17,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 18,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 19,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 20,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 21,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 22,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 23,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 24,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 0,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 1,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 2,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 3,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 4,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 5,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 6,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 7,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 8,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 9,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 10,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 11,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 12,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 13,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 14,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 15,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 16,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 17,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 18,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 19,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 20,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 21,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 22,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 23,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 24,
+      "words": 1,
+      "mismatched": 0
+    }
+  ],
+  "optional_axi_ports_omitted": [
+    "m_axi_mem_AWID",
+    "m_axi_mem_AWUSER",
+    "m_axi_mem_WID",
+    "m_axi_mem_WUSER",
+    "m_axi_mem_ARID",
+    "m_axi_mem_ARUSER",
+    "m_axi_mem_RID",
+    "m_axi_mem_RUSER",
+    "m_axi_mem_BID",
+    "m_axi_mem_BUSER"
+  ],
+  "scope": "Actual Vivado core checkpoint post-synthesis functional replay, strict full-memory/return bit comparison. Includes captured input128x16x59 and two output channels; not a physical test.",
+  "source_sha256": {
+    "build_work/lung_cnn_lane8_20261101/system/system/lung_pl.runs/design_1_lung_conv_0_0_synth_1/design_1_lung_conv_0_0.dcp": "9efc8b16890571ab6a51a104f64af2ad5b000acfb746587d92d2e64b65cd3eed",
+    "build_work/lung_cnn_lane8_20261101/run_post_v2.py": "d4eb8fbd1067d4bbecf735540e26bbe679b591dcea63b568b61cbb84b0eb7c60",
+    "tools/cnn_post_repair_v2.py": "5be0b1eea3c25eff770ff8a372c7a5e6eb50ca37bf1d1dfea443eac19d385e9e",
+    "tools/cnn_lane8_offline.py": "3cae420c7d94d4e3d7f24fd0293222c064934ec30cdc4964c3872a9359b09f51",
+    "tools/test_cnn_flow_post.py": "66773a6119b1b014fb7ee1aa508250193c18f10a9459a2d996992cc4151b7ff2",
+    "tools/test_lung_fix_post.py": "b611e4d14a3cd4f72c5c0f126072113c76231df5b1c5eeee8d9607599c6f651f",
+    "build_work/lf_diag/verilog/ooc_func.v": "d03e76486ce48510fb9cde670925fe1b47cbd61ac84e70c973586049e8cfbaec",
+    "build_work/lf_diag/verilog/ooc_sim60.log": "67832a5f473c7214ff2c7c65d0a8bf8252ddda8145531af737c131b1af9d9379",
+    "build_work/lf_diag/tv/rtldatafile/rtl.lung_conv_fp32.autotvout_mem.dat": "854fdfd45fa7b6033b7334034d098140a22d332a9fe0cdde20b4766263032570",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/verilog/tb.v": "7323618403f3df2ac43f342b4dbb74eeb3c842c89b0606607b5e5b5595ba5b33",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/verilog/monitor.sv": "0c6d4bb59857687dddbbc2c2a5ed55288da851bdf9608306d7626a9193b5d803",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/verilog/post.prj": "7624632ff5b06b366d7cba905ff85cd8011affc0b732939442de06a49797188a",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_bias.dat": "2ee58d6b62a06ca00bd0793ef74497f14830eb1e44b6af8cd82b53ca376e482e",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_ci.dat": "3c89926b620af18fe55baa0b543100ce2189d6dff91938b77b383fd9d6ff17aa",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_co.dat": "2a6d0fd997fa0235599ca3eb4b7c6d59bf510995d6d66d5ffd391317ce73edfd",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_height.dat": "e81497dbbbc12b7ce7e20085897d034b089fc3a7b7f76d92b001865b22e4434a",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_input_r.dat": "df52e7ea83253e865e105d3da189835c7384c288b8ae0454d8209d2c67df4f1c",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_mem.dat": "ede2e27afa2122bcae73906511eaaaddb474192ffc6ed06e68f7ee8aa98e8e45",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_output_r.dat": "a535f141fb064d5d3da1b82d027b396ce90efe915404dcf4ac670a2fe291e9d7",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_weight.dat": "b8dc3dd5212f2f68bf0f8f0a50f5fe5bb6719cd00dd8acbd31df7e730da953c6",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvin_width.dat": "8ee14e599725327d1588abedf458162974d29d9f7a252d3be588d0d5be8f4223",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_ap_return.dat": "78e54582902c6eb5af8d8f31ca40dd4c867e50240c1013651b8750754a3324a4",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_bias.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_ci.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_co.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_height.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_input_r.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_mem.dat": "2c41c9bd9ca7d145ee5f47322da7a6795557b91221a03df42b8b84f0656633de",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_output_r.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_weight.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/c.lung_conv_fp32.autotvout_width.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/tv/cdatafile/ref.tcl": "c5ac60dfbd40657893f50d84918dfa8380c6f882b00ce2f740dd97e805c52d56",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/verilog/tb.v": "7323618403f3df2ac43f342b4dbb74eeb3c842c89b0606607b5e5b5595ba5b33",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/verilog/monitor.sv": "0c6d4bb59857687dddbbc2c2a5ed55288da851bdf9608306d7626a9193b5d803",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/verilog/post.prj": "7624632ff5b06b366d7cba905ff85cd8011affc0b732939442de06a49797188a",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_bias.dat": "b47d5c67acd0f18298f55578c374bbec591663a939584c9345b5147f6f29b06c",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_ci.dat": "f3df46818cbab65d5907ef96dfe9aabbfc9e3e968866be302b5914dfe95edb35",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_co.dat": "ea765638c18791b04361cf292b5337a22876f334bee27e55db69a5aab6e7fc43",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_height.dat": "5e5bd38abed613579ee66375a8a07bdafec2e6c1f359d24d2a1e6801cb14bb3c",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_input_r.dat": "b0b59b1bfe9592ab6c799853792560631e5abb5a317c88823d65daddbd82e53e",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_mem.dat": "55809f7d8a7cb3bbbfffc385dbd8673123e8f1a0e2288a976e96bb69fdea0cf8",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_output_r.dat": "519cd3346762cab02e741f62b2585491b00b46d90d1f89ac7b0734dcca8d4005",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_weight.dat": "17a6180a17ead076b03bd7b9678950fe6f81aa7642da4bfe3cbe7e8247906b5e",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvin_width.dat": "16a1fc4c47a4bd6f2d1d9ae23f6bb710493d46052dae914d14588339c33df1e6",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_ap_return.dat": "2979b7a72d8902ddb1d7f56bbcc596bcd3e10cad700253e431132395964c9fb1",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_bias.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_ci.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_co.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_height.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_input_r.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_mem.dat": "26f5f1392d90d007a8c327d27383c0b791bc8e43092b130107939e13776ec17e",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_output_r.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_weight.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/c.lung_conv_fp32.autotvout_width.dat": "c7f9a74987a55c55a47382f0a6759b7751451049eaeade0c103809213b79aa6f",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/tv/cdatafile/ref.tcl": "5b7e6bca557c95b6cf3120b0903ff863bc6f58f6aa830d0d16db770c70d7bfcb"
+  },
+  "compiled_simulator_sha256": {
+    "build_work/lung_cnn_lane8_20261101/post_v2/legacy/verilog/xsim.dir/fixed_post/xsimk.exe": "e5f527bc948febb382591179b896a8d9e1641c5ca04bbe4829bee14246526c72",
+    "build_work/lung_cnn_lane8_20261101/post_v2/captured/verilog/xsim.dir/fixed_post/xsimk.exe": "927d17a2b399c7a71ed75e6e34f7b8299d873daae0dd9acd6d1be8ea3b469811"
+  },
+  "report_sha256": {
+    "build_work/lung_cnn_lane8_20261101/post_evidence.zip": "fc05a02c5e819023d7bd7e88b629f265da7de2bf401cfa139de1c0dbc2e07420",
+    "build_work/lung_cnn_lane8_20261101/post_v2/summary.json": "be73a363dd6658ac23a2bde6ebdeaf4087791a75f4805b31221243e84e761e4f"
+  }
+}

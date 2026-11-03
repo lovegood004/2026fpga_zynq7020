@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "pw_original_files": 140,
+  "pw_original_bytes": 5992808,
+  "pw_layers": 30,
+  "pw_binary_files": 90,
+  "pw_reference_outputs": 675088,
+  "pw_csim": {
+    "test": "pw_shared",
+    "rtl": false,
+    "calls": 43,
+    "outputs_checked": 688593,
+    "failures": 0,
+    "max_scaled_error": 0.000190305305
+  },
+  "pw_hls_version": "Vitis HLS 2021.1 (actual log retained)",
+  "esp_component_files": 196,
+  "esp_component_version": "3.3.10",
+  "esp_selected_source_files": {
+    "CORE_SRCS": 59,
+    "ARDUINO_LIBRARY_BLE_SRCS": 30,
+    "ARDUINO_LIBRARY_Preferences_SRCS": 1
+  },
+  "esp_config_selected": [
+    "BLE",
+    "Preferences"
+  ],
+  "esp_sources_and_raw_unchanged": true,
+  "actual_esp_build": false,
+  "esp_build_limit": "No exported ESP-IDF environment in this session; instructions provided, no compile or flash claim.",
+  "original_file_edit_allowlist": [
+    "README.md",
+    "build/FILE_MANIFEST.json",
+    "build/organization-sources.json",
+    "src/README.md",
+    "src/esp32/DEPENDENCIES.md"
+  ],
+  "modified_original_files": [
+    "README.md",
+    "build/FILE_MANIFEST.json",
+    "build/organization-sources.json",
+    "src/README.md",
+    "src/esp32/DEPENDENCIES.md"
+  ],
+  "other_original_files_byte_exact": 1079,
+  "removed_original_files": [],
+  "retained": {
+    "generated_ip": "src/pl/ip/pw unchanged",
+    "firmware": "board/firmware unchanged",
+    "existing_build_entry": "build/scripts/build.py unchanged",
+    "report": "unchanged; author to complete"
+  },
+  "limits": [
+    "No new PW synthesis/RTL cosim/IP export or equivalence claim",
+    "No ESP compilation or hardware action",
+    "No report or AI history fabrication"
+  ],
+  "notes": "PW source/data and ESP subset copied byte-exact from AX7020_Project, preserving third-party original files and license marks."
+}

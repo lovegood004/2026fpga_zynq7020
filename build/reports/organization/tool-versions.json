@@ -1,0 +1,6 @@
+{
+  "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+  "vivado": "2021.1 (confirmed by actual project generation log)",
+  "arm_gcc": "arm-xilinx-eabi-gcc.exe (GCC) 10.2.0",
+  "host_gpp": "g++.exe (Rev5, Built by MSYS2 project) 5.3.0"
+}

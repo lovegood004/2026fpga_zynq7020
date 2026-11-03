@@ -1,0 +1,118 @@
+
+
+================================================================
+== Synthesis Summary Report of 'lung_linear_int8'
+================================================================
++ General Information: 
+    * Date:           Sat Oct 31 16:48:45 2026
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+    * Project:        dot
+    * Solution:       solution (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+----------+---------+-----------+-----------+-----+
+    |                            Modules                            | Issue|      | Latency | Latency | Iteration|         | Trip |          |          |         |           |           |     |
+    |                            & Loops                            | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|   BRAM   |   DSP   |     FF    |    LUT    | URAM|
+    +---------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+----------+---------+-----------+-----------+-----+
+    |+ lung_linear_int8                                             |     -|  0.00|        -|        -|         -|        -|     -|        no|  28 (10%)|  20 (9%)|  4511 (4%)|  5145 (9%)|    -|
+    | + grp_lung_linear_int8_Pipeline_load_input_fu_396             |     -|  0.00|        -|        -|         -|        -|     -|        no|         -|        -|  277 (~0%)|  300 (~0%)|    -|
+    |  o load_input                                                 |     -|  9.00|        -|        -|        10|        1|     -|       yes|         -|        -|          -|          -|    -|
+    | + grp_lung_linear_int8_Pipeline_load_lane_load_weight_fu_406  |     -|  0.00|        -|        -|         -|        -|     -|        no|         -|        -|  942 (~0%)|   835 (1%)|    -|
+    |  o load_lane_load_weight                                      |     -|  9.00|        -|        -|        13|        1|     -|       yes|         -|        -|          -|          -|    -|
+    | + grp_lung_linear_int8_Pipeline_dot_k_fu_427                  |     -|  1.32|        -|        -|         -|        -|     -|        no|         -|   8 (3%)|  361 (~0%)|   671 (1%)|    -|
+    |  o dot_k                                                      |     -|  9.00|        -|        -|         5|        1|     -|       yes|         -|        -|          -|          -|    -|
+    | + grp_lung_linear_int8_Pipeline_store_fu_452                  |     -|  0.00|       16|  160.000|         -|       16|     -|        no|         -|        -|  183 (~0%)|  356 (~0%)|    -|
+    |  o store                                                      |     -|  9.00|       14|  140.000|         8|        1|     8|       yes|         -|        -|          -|          -|    -|
+    | o output_tile                                                 |     -|  9.00|        -|        -|         -|        -|     -|        no|         -|        -|          -|          -|    -|
+    |  o output_row                                                 |     -|  9.00|        -|        -|         -|        -|     -|        no|         -|        -|          -|          -|    -|
+    +---------------------------------------------------------------+------+------+---------+---------+----------+---------+------+----------+----------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|           | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_mem | 8 -> 32    | 64            | 0       | slave  | 0        | 0         | 64           | 64           | 4           | 4           |
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 32     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+-----------------------+
+| Argument | Direction | Datatype              |
++----------+-----------+-----------------------+
+| x        | inout     | unsigned char const * |
+| w        | inout     | signed char const *   |
+| y        | inout     | int*                  |
+| rows     | in        | int                   |
+| ci       | in        | int                   |
+| co       | in        | int                   |
+| xzero    | in        | int                   |
+| wzero    | in        | int                   |
+| return   | out       | int                   |
++----------+-----------+-----------------------+
+
+* SW-to-HW Mapping
++----------+-------------------------+-----------+----------+-----------------------+
+| Argument | HW Name                 | HW Type   | HW Usage | HW Info               |
++----------+-------------------------+-----------+----------+-----------------------+
+| x        | m_axi_mem               | interface |          |                       |
+| x        | s_axi_control x_1       | register  | offset   | offset=0x20, range=32 |
+| x        | s_axi_control x_2       | register  | offset   | offset=0x24, range=32 |
+| w        | m_axi_mem               | interface |          |                       |
+| w        | s_axi_control w_1       | register  | offset   | offset=0x30, range=32 |
+| w        | s_axi_control w_2       | register  | offset   | offset=0x34, range=32 |
+| y        | m_axi_mem               | interface |          |                       |
+| y        | s_axi_control y_1       | register  | offset   | offset=0x40, range=32 |
+| y        | s_axi_control y_2       | register  | offset   | offset=0x44, range=32 |
+| rows     | s_axi_control rows      | register  |          | offset=0x50, range=32 |
+| ci       | s_axi_control ci        | register  |          | offset=0x58, range=32 |
+| co       | s_axi_control co        | register  |          | offset=0x60, range=32 |
+| xzero    | s_axi_control xzero     | register  |          | offset=0x68, range=32 |
+| wzero    | s_axi_control wzero     | register  |          | offset=0x70, range=32 |
+| return   | s_axi_control ap_return | register  |          | offset=0x10, range=32 |
++----------+-------------------------+-----------+----------+-----------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+* Bursts and Widening Missed
++--------------+----------+-------------+------------------------------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------------------+
+| HW Interface | Variable | Loop        | Problem                                                                                                          | Resolution | Location                                                              |
++--------------+----------+-------------+------------------------------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------------------+
+| m_axi_mem    | w        | load_weight | Access load is in the conditional branch                                                                         | 214-232    | E:/FPGA_competition/AX7020_Project/platform/lung_linear/dot.cpp:29:54 |
+| m_axi_mem    | 1        | store       | Access store is in the conditional branch                                                                        | 214-232    | E:/FPGA_competition/AX7020_Project/platform/lung_linear/dot.cpp:51:10 |
+| m_axi_mem    | x        |             | Could not widen since the size of type 'i8' is greater than or equal to the max_widen_bitwidth threshold of '0'. |            | E:/FPGA_competition/AX7020_Project/platform/lung_linear/dot.cpp:24:13 |
++--------------+----------+-------------+------------------------------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+

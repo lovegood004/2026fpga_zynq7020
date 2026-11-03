@@ -1,0 +1,1 @@
+{"files":["build.py","src/top.v","constraints/board.xdc"],"toolchain":{"vivado":"2021.1 (example; replace with measured version)","python":"3.10+ (replace with measured version)"}}

@@ -1,0 +1,19 @@
+FINAL_TARGETS {{target_ctx JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0 target_id 1 level 0 name APU state_reason {} is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS1-210512180081-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS1-210512180081 jtag_cable_name {Digilent JTAG-HS1 210512180081} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS1 jtag_cable_serial 210512180081} {target_ctx JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} state_reason Running is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS1-210512180081-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS1-210512180081 jtag_cable_name {Digilent JTAG-HS1 210512180081} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS1 jtag_cable_serial 210512180081 suspended 0} {target_ctx JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.1 target_id 3 level 1 name {ARM Cortex-A9 MPCore #1} state_reason Suspended is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS1-210512180081-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS1-210512180081 jtag_cable_name {Digilent JTAG-HS1 210512180081} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS1 jtag_cable_serial 210512180081 suspended 1} {target_ctx JTAG-jsn-JTAG-HS1-210512180081-23727093-0 target_id 4 level 0 name xc7z020 state_reason {} is_current 0 bscan {} jtag_device_id 3 jtag_device_ctx jsn-JTAG-HS1-210512180081-23727093-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS1-210512180081 jtag_cable_name {Digilent JTAG-HS1 210512180081} jtag_device_index 1 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS1 jtag_cable_serial 210512180081}}
+INFO: [Hsi 55-2053] elapsed time for repository (E:/Xilinx/Vitis/2021.1/data/embeddedsw) loading 0 seconds
+FINAL_raw_report {844256072 2 359237 0 0 0 0 0 0 713 0 0 0 0 0 32358 2061905 74033 24001 0}
+FINAL_lcd_pl_report {1279476785 1 0 2383192 34918 0 23998}
+FINAL_acq_preview_report {1095782961 1 0 0 0 0 0 0 0 0 0 0 0}
+FINAL_lung_benchmark_report {1279414322 1 0 2 0 24 4 6 165375 11025 3274049984 666666687}
+FINAL_lung_pl_profile {1280330801 1 1 0 96 96 0 0 0 0 673354 9781148 240615 123592704 86507520 1279479345}
+FINAL_linear_pl_profile {1280069681 1 1 0 384 384 0 0 0 0 262202 6352818 669231 36175872 37748736 1280134449}
+FINAL_lung_fft_optimized 1
+FINAL_lung_schedule_enabled 1
+FINAL_lung_display_optimized 1
+FINAL_lung_gru_optimized 1
+FINAL_lung_front_optimized 1
+FINAL_lung_display_trace 0
+FINAL_lung_gru_trace 0
+FINAL_lung_front_trace 0
+FINAL_CNN_CTRL 4
+FINAL_LINEAR_CTRL 4
+FINAL_METRICS_IDLE_OK

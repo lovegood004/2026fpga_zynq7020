@@ -1,0 +1,165 @@
+["E:\\Xilinx\\Vivado\\2021.1\\bin\\vivado.bat", "-mode", "batch", "-source", "E:\\FPGA_competition\\Github\\src\\pl\\create_project.tcl", "-notrace", "-nolog", "-nojournal", "-tclargs", "E:\\FPGA_competition\\Github\\build\\generated\\project-check"]
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at 'C'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source {E:\FPGA_competition\Github\src\pl\create_project.tcl} -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1117.137 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/pw'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/cnn'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/linear'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'.
+Wrote  : <E:\FPGA_competition\Github\build\generated\project-check\system.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1117.137 ; gain = 0.000
+INFO: [BD::TCL 103-2002] Constructing design in IPI design <design_1>...
+INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "design_1".
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:xlconcat:2.1 xilinx.com:ip:xlconstant:1.1 xilinx.com:ip:axi_register_slice:2.1 xilinx.com:ip:processing_system7:5.5 xilinx.com:hls:pw_shared:1.0 xilinx.com:ip:proc_sys_reset:5.0  .
+INFO: [BD::TCL 103-2020] Checking if the following modules exist in the project's sources:  
+acq_preview_axil keys_lcd_pl lcd_spi_axil  .
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-8018] Clock interface aclk has no prefix in its name to identify associated interfaces. The interfaces might be inferred incorrectly. It is advised to review ASSOCIATED_BUSIF value for this interface.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'PROTOCOL' with value 'AXI4LITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'ADDR_WIDTH' with value '12'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_BURST' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/pw'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/cnn'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/linear'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/pw'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/cnn'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/linear'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'wr_ptr' has a dependency on the module local parameter or undefined parameter 'PW'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rd_ptr' has a dependency on the module local parameter or undefined parameter 'PW'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'count' has a dependency on the module local parameter or undefined parameter 'PW'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'lcd_rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'lcd_rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-8018] Clock interface aclk has no prefix in its name to identify associated interfaces. The interfaces might be inferred incorrectly. It is advised to review ASSOCIATED_BUSIF value for this interface.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'PROTOCOL' with value 'AXI4LITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'ADDR_WIDTH' with value '8'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_BURST' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_LOCK' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_CACHE' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_QOS' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'HAS_REGION' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'lcd_rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'lcd_rst_n' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/pw'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/cnn'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGA_competition/Github/src/pl/ip/linear'.
+WARNING: [BD 41-1306] The connection to interface pin </processing_system7_0/UART0_RX> is being overridden by the user with net <acq_uart_rx_1>. This pin will not be connected as a part of interface connection <UART_0>.
+WARNING: [BD 41-1306] The connection to interface pin </processing_system7_0/GPIO_I> is being overridden by the user with net <keys_lcd_pl_0_gpio_i>. This pin will not be connected as a part of interface connection <GPIO_0>.
+WARNING: [BD 41-1306] The connection to interface pin </processing_system7_0/UART0_TX> is being overridden by the user with net <processing_system7_0_UART0_TX>. This pin will not be connected as a part of interface connection <UART_0>.
+Slave segment '/acq_preview_0/S_AXI/reg0' is being assigned into address space '/processing_system7_0/Data' at <0x43C5_0000 [ 4K ]>.
+Slave segment '/lcd_spi_0/S_AXI/reg0' is being assigned into address space '/processing_system7_0/Data' at <0x43C2_0000 [ 64K ]>.
+Slave segment '/pw_shared_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 64K ]>.
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/pw_shared_0/Data_m_axi_mem' at <0x0000_0000 [ 1G ]>.
+Wrote  : <E:\FPGA_competition\Github\build\generated\project-check\system.srcs\sources_1\bd\design_1\design_1.bd> 
+Slave segment '/lung_conv_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C6_0000 [ 64K ]>.
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/lung_conv_0/Data_m_axi_mem' at <0x0000_0000 [ 1G ]>.
+Slave segment '/lung_linear_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C7_0000 [ 64K ]>.
+Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/lung_linear_0/Data_m_axi_mem' at <0x0000_0000 [ 1G ]>.
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1117.137 ; gain = 0.000
+Wrote  : <E:\FPGA_competition\Github\build\generated\project-check\system.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/memory_bus/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/memory_bus/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/memory_bus/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/memory_bus/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/memory_bus/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/memory_bus/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/memory_bus/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/memory_regslice/s_axi_arlock'(1) to pin: '/pw_shared_0/m_axi_mem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/memory_regslice/s_axi_awlock'(1) to pin: '/pw_shared_0/m_axi_mem_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/lung_memory_slice/s_axi_arlock'(1) to pin: '/lung_conv_0/m_axi_mem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/lung_memory_slice/s_axi_awlock'(1) to pin: '/lung_conv_0/m_axi_mem_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/linear_memory_slice/s_axi_arlock'(1) to pin: '/lung_linear_0/m_axi_mem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/linear_memory_slice/s_axi_awlock'(1) to pin: '/lung_linear_0/m_axi_mem_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : E:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/memory_bus/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/memory_bus/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/memory_bus/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/memory_bus/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/memory_bus/M00_AXI_wid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/memory_bus/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/memory_bus/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/memory_regslice/s_axi_arlock'(1) to pin: '/pw_shared_0/m_axi_mem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/memory_regslice/s_axi_awlock'(1) to pin: '/pw_shared_0/m_axi_mem_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/lung_memory_slice/s_axi_arlock'(1) to pin: '/lung_conv_0/m_axi_mem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/lung_memory_slice/s_axi_awlock'(1) to pin: '/lung_conv_0/m_axi_mem_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/linear_memory_slice/s_axi_arlock'(1) to pin: '/lung_linear_0/m_axi_mem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/linear_memory_slice/s_axi_awlock'(1) to pin: '/lung_linear_0/m_axi_mem_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : E:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : E:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block acq_preview_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block control_bus/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block keys_lcd_pl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block lcd_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block lcd_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block locked_one .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_regslice .
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pw_shared_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_100m .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_zero .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block control_bus/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_bus/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_bus/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_bus/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_bus/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_bus/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block lung_conv_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block lung_memory_slice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block lung_linear_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block linear_memory_slice .
+Exporting to file E:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file E:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File E:/FPGA_competition/Github/build/generated/project-check/system.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:43 ; elapsed = 00:01:14 . Memory (MB): peak = 1117.137 ; gain = 0.000
+INFO: [BD 5-148] Tcl file written out <E:/FPGA_competition/Github/build/generated/project-check/design_1.tcl>.
+
+PROJECT_CREATED_NO_HARDWARE_ACCESS
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 21:41:17 2026...

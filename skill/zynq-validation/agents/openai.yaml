@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zynq 工程验证"
+  short_description: "黄金参考比较、资源时序门禁、可复现重建与结构化故障定位"
+  default_prompt: "使用 $zynq-validation 对这个 Zynq 工程执行离线验证，输出带范围与哈希的结果，并按触发条件定位失败。"

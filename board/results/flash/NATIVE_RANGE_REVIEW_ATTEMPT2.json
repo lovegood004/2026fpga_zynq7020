@@ -1,0 +1,18 @@
+{
+  "time": "2026-11-03T12:50:19.147885+08:00",
+  "passed": true,
+  "actual_native_detected_capacity_bytes": 33554432,
+  "actual_boot_mode": 0,
+  "erase_range": [
+    [
+      0,
+      12976128
+    ]
+  ],
+  "write_blocks": 99,
+  "all_write_ranges_exact": true,
+  "no_erase_or_write_outside_declared_range": true,
+  "native_program_verify_passed": true,
+  "independent_readback_pending": true,
+  "cold_boot_pending": true
+}

@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "issues": [],
+  "wns_ns": 0.183,
+  "whs_ns": 0.04,
+  "wpws_ns": 3.87,
+  "check_timing": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 4,
+    "no_output_delay": 6,
+    "multiple_clock": 0,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "exceptions": {
+    "no_input_delay": {
+      "count": 4,
+      "scope": "Original eight-lane design keys inputs only, verify exact IO/CDC objects separately",
+      "reason": "Preserved asynchronous keys limitation in original routed review"
+    },
+    "no_output_delay": {
+      "count": 6,
+      "scope": "Original eight-lane software-SPI LCD outputs only",
+      "reason": "Original LCD external timing exception; static timing does not prove physical SPI acceptance"
+    }
+  },
+  "utilization": {
+    "lut": {
+      "used": 43290.0,
+      "available": 53200.0,
+      "percent": 81.37,
+      "limit": 100.0
+    },
+    "ff": {
+      "used": 45513.0,
+      "available": 106400.0,
+      "percent": 42.78,
+      "limit": 100.0
+    },
+    "bram36": {
+      "used": 131.0,
+      "available": 140.0,
+      "percent": 93.57,
+      "limit": 100.0
+    },
+    "dsp": {
+      "used": 214.0,
+      "available": 220.0,
+      "percent": 97.27,
+      "limit": 100.0
+    }
+  },
+  "evidence_sha256": {
+    "Github\\build\\reports\\routed\\timing.rpt": "5ee5c37e7e4f3b559cb1dce5ae5b8e40ff30458eb3fbd294416a713ae843b1c0",
+    "Github\\build\\reports\\routed\\utilization.rpt": "506519a91f88386fb49d74c452721b766a3457f1a4a4759532bee923a3b8aad2",
+    "Github\\build\\qor-policy.json": "120aaf72f3eefcef6d3dff74aa822318f68a2711e244b97a92e66ecd94973c15"
+  },
+  "scope": "Report-only STA/resource check; DRC/CDC/pin identity and design binding require separate review",
+  "command": "qor",
+  "utc": "2026-11-03T13:42:24.200336+00:00",
+  "board_accessed": false
+}

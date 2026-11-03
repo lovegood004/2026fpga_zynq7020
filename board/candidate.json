@@ -1,0 +1,203 @@
+{
+  "candidate": "ACQ_PREVIEW_20261028",
+  "status": "offline_checked_not_board_accepted",
+  "board_accessed": false,
+  "real_capture": false,
+  "flash_written": false,
+  "software_revision": "original25_lane8_normal_20261103",
+  "lung_pl_benchmark": false,
+  "linear_pl_benchmark": false,
+  "hardware_root": "src/pl",
+  "application": "board/firmware/application.elf",
+  "symbols": {
+    "main": {
+      "address": "0x001394a0",
+      "bytes": 4048
+    },
+    "lung_fft_optimized": {
+      "address": "0x00680d18",
+      "bytes": 4
+    },
+    "pw_profile": {
+      "address": "0x00680d20",
+      "bytes": 96
+    },
+    "lung_timeline_report": {
+      "address": "0x00680f00",
+      "bytes": 128
+    },
+    "raw_report": {
+      "address": "0x00680f80",
+      "bytes": 80
+    },
+    "uart_diagnostics": {
+      "address": "0x00680fd0",
+      "bytes": 76
+    },
+    "raw_timing": {
+      "address": "0x0068101c",
+      "bytes": 584
+    },
+    "analysis_report": {
+      "address": "0x00681264",
+      "bytes": 36
+    },
+    "lung_schedule_enabled": {
+      "address": "0x00681288",
+      "bytes": 4
+    },
+    "lcd_pl_report": {
+      "address": "0x00953f14",
+      "bytes": 28
+    },
+    "acq_preview_report": {
+      "address": "0x00953f30",
+      "bytes": 52
+    },
+    "lung_pl_profile": {
+      "address": "0x00953f80",
+      "bytes": 64
+    },
+    "linear_pl_profile": {
+      "address": "0x00953fc0",
+      "bytes": 64
+    },
+    "lung_display_report": {
+      "address": "0x00954000",
+      "bytes": 128
+    },
+    "lung_display_optimized": {
+      "address": "0x00954080",
+      "bytes": 4
+    },
+    "lung_gru_optimized": {
+      "address": "0x009541c0",
+      "bytes": 4
+    },
+    "lung_gru_report": {
+      "address": "0x00954200",
+      "bytes": 256
+    },
+    "lung_front_optimized": {
+      "address": "0x00954400",
+      "bytes": 4
+    },
+    "lung_front_report": {
+      "address": "0x00954440",
+      "bytes": 256
+    },
+    "lung_display_trace": {
+      "address": "0x0137319c",
+      "bytes": 4
+    },
+    "lung_gru_trace": {
+      "address": "0x013731a0",
+      "bytes": 4
+    },
+    "lung_front_trace": {
+      "address": "0x013731b0",
+      "bytes": 4
+    },
+    "_heap": {
+      "address": "0x01373240",
+      "bytes": null
+    },
+    "_heap_end": {
+      "address": "0x02373240",
+      "bytes": null
+    },
+    "_stack_end": {
+      "address": "0x02373240",
+      "bytes": null
+    },
+    "_stack": {
+      "address": "0x02383240",
+      "bytes": null
+    }
+  },
+  "elf_entry": "0x100000",
+  "load_segments": [
+    {
+      "physical": "0x100000",
+      "virtual": "0x100000",
+      "file_bytes": 8766724,
+      "memory_bytes": 36194880,
+      "flags": 7
+    }
+  ],
+  "fpga_clock_hz": 100000000,
+  "spi_hz_max": 1000000,
+  "acq_base": "0x43c50000",
+  "lung_base": "0x43c60000",
+  "linear_base": "0x43c70000",
+  "ps_configuration_and_init_unchanged": true,
+  "xsa_embedded_bit_equals_standalone": true,
+  "sources": [
+    {
+      "path": "board/scripts/deploy_ram.py",
+      "bytes": 5238,
+      "sha256": "c815eb7294501b7967a3f3177e5c7c5296f2e5cb828aa59c4aa22c28d4722579"
+    },
+    {
+      "path": "board/scripts/path_alias.py",
+      "bytes": 882,
+      "sha256": "1d6d54aacbe5510a6a1c2afcf17a855891823302bf03558fd9f016d2f5797824"
+    },
+    {
+      "path": "board/scripts/portable_paths.py",
+      "bytes": 718,
+      "sha256": "4b0393202ff3469804d11054c482479bad12d63b1fd816eb31fd36e3074e2ec9"
+    },
+    {
+      "path": "board/scripts/fpga_loader.tcl",
+      "bytes": 3850,
+      "sha256": "93826df1760b2692ed228128cbaa0d223c846158975debdb30c060dde34b9be5"
+    },
+    {
+      "path": "board/scripts/load_ram.tcl",
+      "bytes": 5442,
+      "sha256": "b8a2c1c317f6e0bb84e1406bf6c41feeb97fa4457100fb0121da646c96db1c4c"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "board/firmware/application.elf",
+      "bytes": 9044912,
+      "sha256": "a9d959c50fcd6fd8fd348aa69504c88dc57c671191a1655a213ee48cc8619372"
+    },
+    {
+      "path": "board/firmware/system.bit",
+      "bytes": 4045676,
+      "sha256": "e5597b4deec14daad2ba330c7945ca2ea1d1be20ba36ecf55e2a90545ce42417"
+    },
+    {
+      "path": "board/firmware/hardware.xsa",
+      "bytes": 1814580,
+      "sha256": "3e69b7dad8a0ca12733e508d6f5d4772d73ba38444714060443be98424138e4a"
+    },
+    {
+      "path": "board/firmware/ps7_init.tcl",
+      "bytes": 36509,
+      "sha256": "ffaa1341022b917f3dcb8071437bf5d6b4518bab6afc5d4bada2f0c432704ca2"
+    }
+  ],
+  "limits": [
+    "Normal functional build for user-requested board trial; NOT physical or power/current acceptance.",
+    "Original25 exact routed design; original75C/2.4A engineering screening FAILED and preserved.",
+    "JTAG temporary RAM only, fresh unconfigured board, preserve recordings first; no Flash/SD/ESP/reset/automatic recording.",
+    "Only one normal application; no benchmark, test request harness, new XADC code or changed business logic."
+  ],
+  "ui_change_scope": "Only lung Connect/Move idle start-page drawing; no capture/analysis/results/heart/model/protocol/PL changes",
+  "parent_candidate": "candidate.json",
+  "ui_validated_offline": true,
+  "lung_schedule_candidate": true,
+  "lung_fft_candidate": true,
+  "lung_display_candidate": true,
+  "lung_gru_candidate": true,
+  "lung_front_candidate": true,
+  "lung_cnn_lane8_candidate": true,
+  "power_current_qualified": false,
+  "release_authorized": false,
+  "normal_files_prepared_only": true,
+  "organization_note": "Portable paths adapted; original startup/performance evidence stored separately. Default plan; this adapted loader has not been executed on hardware."
+}

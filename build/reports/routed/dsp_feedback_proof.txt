@@ -1,0 +1,8 @@
+cell=design_1_i/lung_conv_0/inst/grp_row_pipeline_fu_955/compute_channels_U0/grp_compute_channels_Pipeline_store_fu_896/fadd_32ns_32ns_32_4_full_dsp_1_U437/lung_conv_fp32_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP
+opmode_1=0
+opmode_3=0
+opmode_6=0
+opmode_4_equals_5=true
+z_mux_possible=000,011
+x_mux_possible=00,01
+internal_p_feedback_possible=false

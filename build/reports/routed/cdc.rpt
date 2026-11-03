@@ -1,0 +1,17 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Nov  2 17:05:16 2026
+| Host         : DESKTOP-3O22RAI running 64-bit major release  (build 9200)
+| Command      : report_cdc -file E:/FPGA_competition/AX7020_Project/build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/cdc.rpt
+| Design       : design_1_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock      Destination Clock  CDC Type                 Exceptions  Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ----------------  -----------------  -----------------------  ----------  ---------  ----  ------  -------  ------------  
+Info      input port clock  clk_fpga_0         No Common Primary Clock  False Path          4     4       0        0             0  
+

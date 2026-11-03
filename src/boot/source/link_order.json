@@ -1,0 +1,14 @@
+[
+  "sd.c",
+  "nand.c",
+  "nor.c",
+  "image_mover.c",
+  "md5.c",
+  "fsbl_hooks.c",
+  "main.c",
+  "rsa.c",
+  "qspi.c",
+  "ps7_init.c",
+  "pcap.c",
+  "fsbl_handoff.S"
+]

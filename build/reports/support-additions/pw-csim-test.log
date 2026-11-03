@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../Github/src/pl/hls/pw/tests/tb_shared.cpp in debug mode
+   Compiling ../../../../../../../Github/src/pl/hls/pw/src/pw_shared.cpp in debug mode
+   Generating csim.exe
+{"test":"pw_shared","rtl":false,"calls":43,"outputs_checked":688593,"failures":0,"max_scaled_error":0.000190305305}
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

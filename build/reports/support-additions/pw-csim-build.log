@@ -1,0 +1,72 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source E:/Xilinx/Vitis_HLS/2021.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'hp' on host 'desktop-3o22rai' (Windows NT_amd64 version 6.2) on Tue Nov 03 22:50:02 +0800 2026
+INFO: [HLS 200-10] In directory 'E:/FPGA_competition/outputs/github-support-additions/pw-csim'
+Sourcing Tcl script 'E:\FPGA_competition\outputs\github-support-additions\pw-csim\run.tcl'
+INFO: [HLS 200-1510] Running: open_project shared 
+INFO: [HLS 200-10] Creating and opening project 'E:/FPGA_competition/outputs/github-support-additions/pw-csim/shared'.
+INFO: [HLS 200-1510] Running: set_top pw_shared 
+INFO: [HLS 200-1510] Running: add_files E:/FPGA_competition/Github/src/pl/hls/pw/src/pw_shared.cpp -cflags -std=c++11 -I"E:/FPGA_competition/Github/src/pl/hls/pw/src" -I"E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw" -I"E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw/xf_blas" -ffp-contract=off 
+INFO: [HLS 200-10] Adding design file 'E:/FPGA_competition/Github/src/pl/hls/pw/src/pw_shared.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb E:/FPGA_competition/Github/src/pl/hls/pw/tests/tb_shared.cpp -cflags -std=c++11 -I"E:/FPGA_competition/Github/src/pl/hls/pw/src" -I"E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw" -I"E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw/xf_blas" -ffp-contract=off 
+INFO: [HLS 200-10] Adding test bench file 'E:/FPGA_competition/Github/src/pl/hls/pw/tests/tb_shared.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'E:/FPGA_competition/outputs/github-support-additions/pw-csim/shared/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=false 
+INFO: [HLS 200-1510] Running: csim_design -argv E:/FPGA_competition/Github/src/pl/hls/pw/data 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../Github/src/pl/hls/pw/tests/tb_shared.cpp in debug mode
+   Compiling ../../../../../../../Github/src/pl/hls/pw/src/pw_shared.cpp in debug mode
+   Generating csim.exe
+In file included from E:/Xilinx/Vitis_HLS/2021.1/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/hls_fpo.h:189,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/hls_half_fpo.h:64,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/hls_half.h:71,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/etc/ap_private.h:91,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/ap_common.h:653,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/ap_int.h:55,
+                 from E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw/xf_blas/helpers/utils/types.hpp:32,
+                 from E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw/xf_blas/helpers.hpp:28,
+                 from ../../../../../../../Github/src/pl/hls/pw/src/pw_shared.cpp:3:
+E:/Xilinx/Vitis_HLS/2021.1/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from E:/Xilinx/Vitis_HLS/2021.1/include/hls_fpo.h:189:0,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/hls_half_fpo.h:64,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/hls_half.h:71,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/etc/ap_private.h:91,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/ap_common.h:653,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/ap_int.h:55,
+                 from E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw/xf_blas/helpers/utils/types.hpp:32,
+                 from E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw/xf_blas/helpers.hpp:28,
+                 from ../../../../../../../Github/src/pl/hls/pw/src/pw_shared.cpp:3:
+E:/Xilinx/Vitis_HLS/2021.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from E:/Xilinx/Vitis_HLS/2021.1/include/hls_hotbm_apfixed.h:45:0,
+                 from E:/Xilinx/Vitis_HLS/2021.1/include/hls_math.h:1065,
+                 from E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw/xf_blas/helpers/funcs/padding.hpp:31,
+                 from E:/FPGA_competition/Github/src/pl/hls/pw/vendor/blas/L1/include/hw/xf_blas/helpers.hpp:41,
+                 from ../../../../../../../Github/src/pl/hls/pw/src/pw_shared.cpp:3:
+E:/Xilinx/Vitis_HLS/2021.1/include/utils/x_hls_utils.h:243:40: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
+ __attribute__((hls_preserve)) T reg(T d)
+                                        ^
+{"test":"pw_shared","rtl":false,"calls":43,"outputs_checked":688593,"failures":0,"max_scaled_error":0.000190305305}
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 42.488 seconds; current allocated memory: 112.616 MB.
+PW_REQUESTED_STAGE_COMPLETE_NO_BOARD_ACCESS
+INFO: [Common 17-206] Exiting vitis_hls at Tue Nov  3 22:50:46 2026...

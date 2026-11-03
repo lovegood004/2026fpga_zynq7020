@@ -1,0 +1,14 @@
+# Generated tool workspaces and local machine settings
+build/generated/
+sim/generated/
+board/generated/
+**/__pycache__/
+*.py[cod]
+.Xil/
+**/.Xil/
+*.jou
+*.str
+tools.local.json
+.vscode/
+.DS_Store
+Thumbs.db

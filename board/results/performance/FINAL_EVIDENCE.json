@@ -1,0 +1,13 @@
+{
+  "time": "2026-11-03T11:13:27.909837+08:00",
+  "sha256": {
+    "outputs/original25_metrics_20261103/BOARD_COMPARISON.json": "661e80f8d35997aef3b55df437979bc05fe0c76e732ff66e351af1e912ede987",
+    "outputs/original25_metrics_20261103/BOARD_COMPARISON.md": "340bc1048045b241cc604536725a8dd16f31f2bb90f296614828804dc36c997b",
+    "outputs/original25_metrics_20261103/before_all24.csv": "90c41c5781292491552b39acab1e463435f3a34c46889a4d943674e16c006134",
+    "outputs/original25_metrics_20261103/after_all24.csv": "03145a7ff07747bdefd12db80556a9f5a06cbabe61273452413538971ce16707",
+    "build_work/original25_metrics_board_20261103/status.json": "f13b5cf7d74d5b2a031ffe0dbbbc700099feb86349312aafc1391f4f85c5b364",
+    "build_work/original25_metrics_board_20261103/normal_restored_status.log": "c528dff689bfccaedb527211b5f0b30b93323854e00e173efaafb2722fe9b286"
+  },
+  "normal_restored": true,
+  "power_current_qualified": false
+}

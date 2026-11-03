@@ -1,0 +1,329 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "simulator_optimization": "O3",
+  "cases": 25,
+  "mismatched_words": 0,
+  "broken_baseline_reproduced": [
+    0,
+    0,
+    12
+  ],
+  "legacy_cases": 3,
+  "legacy_mismatched_words": 0,
+  "details": [
+    {
+      "port": "mem",
+      "transaction": 0,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 1,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 2,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 3,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 4,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 5,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 6,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 7,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 8,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 9,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 10,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 11,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 12,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 13,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 14,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 15,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 16,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 17,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 18,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 19,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 20,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 21,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 22,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 23,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "mem",
+      "transaction": 24,
+      "words": 196864,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 0,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 1,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 2,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 3,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 4,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 5,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 6,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 7,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 8,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 9,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 10,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 11,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 12,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 13,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 14,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 15,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 16,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 17,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 18,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 19,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 20,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 21,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 22,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 23,
+      "words": 1,
+      "mismatched": 0
+    },
+    {
+      "port": "ap_return",
+      "transaction": 24,
+      "words": 1,
+      "mismatched": 0
+    }
+  ],
+  "optional_axi_ports_omitted": [
+    "m_axi_mem_AWID",
+    "m_axi_mem_AWUSER",
+    "m_axi_mem_WID",
+    "m_axi_mem_WUSER",
+    "m_axi_mem_ARID",
+    "m_axi_mem_ARUSER",
+    "m_axi_mem_RID",
+    "m_axi_mem_RUSER",
+    "m_axi_mem_BID",
+    "m_axi_mem_BUSER"
+  ],
+  "scope": "Actual Vivado core checkpoint post-synthesis functional replay, strict full-memory/return bit comparison. Includes captured input128x16x59 and two output channels; not a physical test."
+}

@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "bitstream_written": false,
+  "power_gate_passed": false,
+  "release_authorized": false,
+  "setup_slack_ns": 0.183,
+  "hold_slack_ns": 0.04,
+  "utilization": {
+    "lut": 43290.0,
+    "ff": 45513.0,
+    "bram36": 131.0,
+    "dsp": 214.0,
+    "iob": 12.0
+  },
+  "drc_warning_counts": {
+    "DPIP-1": 195,
+    "DPOP-1": 147,
+    "DPOP-2": 149,
+    "DPREG-4": 1,
+    "PDCN-1569": 3,
+    "RTSTAT-10": 1,
+    "AVAL-4": 65,
+    "AVAL-5": 16,
+    "REQP-1725": 17
+  },
+  "methodology_warning_counts": {
+    "LUTAR-1": 3,
+    "TIMING-18": 6
+  },
+  "cdc_summary": [
+    [
+      "4",
+      "4",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "original_external_pins": 12,
+  "original_io_drive_4ma_slow": true,
+  "ps_ddr_clock_and_external_ports_identical": true,
+  "source_sha256": {
+    "tools/cnn_control_all_static_20261102.py": "b6eebcede087db57e0e7c516e3e578618e183a731d7f99708a5cab1d43e98146",
+    "tools/cnn_review_routed_without_bit_20261102.py": "95abfba1e3c2ae65d3b3db4df83c4aa5dc0aa9a68a72dfdaab70da267efb7e17",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_route/execution_receipt.json": "02f88143c0636b7b5edea8ca65064f8215d01c594cefab5b8fe473f1dec4671d",
+    "platform/lung_cnn_lane8/system/implement.tcl": "0d2c5f839f141ab2f242aa8b4dac83c606eef7d1d228b9d3fb83d255523ef8e8",
+    "platform/lung_cnn_lane8/system/inspect_dsp.tcl": "3fdd59463d8b01aed7ab2d7f4be0e531e27bdd9319237c8d0847eac469cf33e7",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/reports.tcl": "edee6060751710eed7fa6473ff45cdac2204686b0d4e51ef86cc690f6b0ed3c1",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/inspect.tcl": "041d02198c77dc152a543d5c3319e28ce750e8d80811a0077b34e7743f6bf9be",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_route/results/routed.dcp": "d5bb298a383f47175f723010a6eb704f126bc85efae4bf7e381307c74d9178a8",
+    "build_work/lung_cnn_lane8_20261101/system/bd_receipt.json": "41aa923aadc743ba7fac7c80e3d106c770a623164d5b2ed8768500a406c2f0c6",
+    "tools/review_linear.py": "8fd1083e4dc502a7b78e89b7785a4eba526a43b5f9de10ec576b58a7bfdf6102",
+    "outputs/ln31/d_20261031_190028/build_work/acq_preview/system/results/acq_preview.xsa": "472656736b0614fc9fa1c21a7e6e9fb6de64765a37f771e1d5ef830a16ed7a03",
+    "build_work/lung_cnn_lane8_20261101/system/results/lung_pl_preimpl.xsa": "487dd1c06a529c90055bb012569b000fa1ab257d7572654847bdd30b27ad948a"
+  },
+  "report_sha256": {
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/cdc.rpt": "9d2fce88d1e1eba8c1b8102d7cb0fc2fcd4cb7d0947b3c6b8f738039c0e2c808",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/drc.rpt": "c37f97e8ca2d3d6381378fff14f315f0f7ea10622395f19747bef348932cb6cd",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/dsp_feedback_proof.txt": "df06df42273f56bed5f1f6f5311245026e3ee822efe3a942f8297817aff9b338",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/gates.txt": "deec0cf35d7793bf08d46b0ba771adb317a44c4e6650c3775599e02ab266d2db",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/io.rpt": "45729e1a61483c07f7dd6556a1c8547094c32a086b2522db5f70023fc02f6942",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/methodology.rpt": "e77257d0bc3d6566be444fa9cb1960e583cdc83908ce34820a27895bfdf9eee8",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/timing.rpt": "5ee5c37e7e4f3b559cb1dce5ae5b8e40ff30458eb3fbd294416a713ae843b1c0",
+    "build_work/lung_cnn_lane8_20261101/offline_repair_20261102/control_all_static_review/results/utilization.rpt": "506519a91f88386fb49d74c452721b766a3457f1a4a4759532bee923a3b8aad2"
+  },
+  "scope": "Strict existing routed-only timing/IO/DRC/DSP feedback/methodology/CDC checks. Does not claim bit/XSA matching, power, BSP/ARM, physical temperature or deployment acceptance. Existing external LCD/key timing limitations retained."
+}

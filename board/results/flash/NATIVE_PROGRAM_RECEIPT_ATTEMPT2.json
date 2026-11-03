@@ -1,0 +1,30 @@
+{
+  "start": "2026-11-03T12:44:43.309230+08:00",
+  "end": "2026-11-03T12:49:38.623563+08:00",
+  "command": [
+    "E:/Xilinx/Vitis/2021.1/bin/program_flash.bat",
+    "-f",
+    "E:\\FPGA_competition\\AX7020_Project\\build_work\\flash_deployment_20261103\\program_image_v2.bin",
+    "-offset",
+    "0",
+    "-flash_type",
+    "qspi-x4-single",
+    "-erase_sector",
+    "65536",
+    "-fsbl",
+    "E:\\FPGA_competition\\2\\boot\\fsbl.elf",
+    "-blank_check",
+    "-verify",
+    "-target_name",
+    "jsn-JTAG-HS1-210512180081-4ba00477-0",
+    "-url",
+    "tcp:127.0.0.1:3121"
+  ],
+  "returncode": 0,
+  "native_log_sha256": "3028d851c19c72452c9b43f67f6152b64c38de8ed1c5d54731622e3e14410424",
+  "program_image_sha256": "266ff5a2ca5f2defca751649d56f871e1ffc94512af036b30b64bb7bcbb3c32a",
+  "independent_readback_passed": false,
+  "cold_boot_verified": false,
+  "board_programmer_called": true,
+  "native_success_claim": true
+}

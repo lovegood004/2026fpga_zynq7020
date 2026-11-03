@@ -1,0 +1,149 @@
+
+
+================================================================
+== Synthesis Summary Report of 'lung_conv_fp32'
+================================================================
++ General Information: 
+    * Date:           Sun Nov  1 23:04:10 2026
+    * Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+    * Project:        conv
+    * Solution:       solution (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+-------------+-------------+-----+
+    |                                  Modules                                  | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |           |          |             |             |     |
+    |                                  & Loops                                  | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM    |    DSP   |      FF     |     LUT     | URAM|
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+-------------+-------------+-----+
+    |+ lung_conv_fp32                                                           |     -|  0.00|        -|          -|         -|        -|     -|        no|  138 (49%)|  62 (28%)|  15904 (14%)|  30435 (57%)|    -|
+    | + grp_lung_conv_fp32_Pipeline_load_y_load_c_load_x_fu_794                 |     -|  0.00|        -|          -|         -|        -|     -|        no|          -|   13 (5%)|    2325 (2%)|    1941 (3%)|    -|
+    |  o load_y_load_c_load_x                                                   |     -|  9.00|        -|          -|        15|        1|     -|       yes|          -|         -|            -|            -|    -|
+    | + grp_row_pipeline_fu_955*                                                |     -|  0.00|        -|          -|         -|        -|     -|  dataflow|     6 (2%)|  31 (14%)|   10171 (9%)|  17744 (33%)|    -|
+    |  + grp_prefetch_weights_fu_476                                            |     -|  0.00|        -|          -|         -|        -|     -|        no|     4 (1%)|    6 (2%)|    818 (~0%)|    1057 (1%)|    -|
+    |   + grp_prefetch_weights_Pipeline_VITIS_LOOP_20_2_fu_182                  |     -|  0.00|        -|          -|         -|        -|     -|        no|          -|         -|    131 (~0%)|     91 (~0%)|    -|
+    |    o VITIS_LOOP_20_2                                                      |     -|  9.00|        -|          -|         3|        1|     -|       yes|          -|         -|            -|            -|    -|
+    |   + grp_prefetch_weights_Pipeline_VITIS_LOOP_28_4_VITIS_LOOP_29_5_fu_191  |     -|  2.81|        -|          -|         -|        -|     -|        no|          -|         -|     93 (~0%)|    210 (~0%)|    -|
+    |    o VITIS_LOOP_28_4_VITIS_LOOP_29_5                                      |     -|  9.00|        -|          -|         2|        1|     -|       yes|          -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_18_1                                                       |     -|  9.00|        -|          -|         -|        -|     -|        no|          -|         -|            -|            -|    -|
+    |    o VITIS_LOOP_27_3                                                      |     -|  9.00|        -|          -|         -|        -|     -|        no|          -|         -|            -|            -|    -|
+    |  + grp_compute_channels_fu_494                                            |     -|  0.11|        -|          -|         -|        -|     -|        no|          -|   19 (8%)|    7719 (7%)|  15118 (28%)|    -|
+    |   + grp_compute_channels_Pipeline_init_group_fu_569                       |     -|  6.27|       18|    180.000|         -|       18|     -|        no|          -|         -|      7 (~0%)|     37 (~0%)|    -|
+    |    o init_group                                                           |     -|  9.00|       16|    160.000|         1|        1|    16|       yes|          -|         -|            -|            -|    -|
+    |   + grp_compute_channels_Pipeline_mac_c_mac_x_mac_fu_581                  |     -|  0.11|        -|          -|         -|        -|     -|        no|          -|   17 (7%)|    6513 (6%)|  13383 (25%)|    -|
+    |    + grp_ordered_mac_0_s_fu_2644                                          |     -|  3.72|       11|    110.000|         -|        1|     -|       yes|          -|   2 (~0%)|    619 (~0%)|    1030 (1%)|    -|
+    |    + grp_ordered_mac_1_s_fu_2654                                          |     -|  3.72|       11|    110.000|         -|        1|     -|       yes|          -|   2 (~0%)|    619 (~0%)|    1030 (1%)|    -|
+    |    + grp_ordered_mac_2_s_fu_2664                                          |     -|  3.72|       11|    110.000|         -|        1|     -|       yes|          -|   2 (~0%)|    619 (~0%)|    1030 (1%)|    -|
+    |    + grp_ordered_mac_3_s_fu_2674                                          |     -|  3.72|       11|    110.000|         -|        1|     -|       yes|          -|   2 (~0%)|    619 (~0%)|    1030 (1%)|    -|
+    |    + grp_ordered_mac_4_s_fu_2684                                          |     -|  3.72|       11|    110.000|         -|        1|     -|       yes|          -|   2 (~0%)|    619 (~0%)|    1030 (1%)|    -|
+    |    + grp_ordered_mac_5_s_fu_2694                                          |     -|  3.72|       11|    110.000|         -|        1|     -|       yes|          -|   2 (~0%)|    619 (~0%)|    1030 (1%)|    -|
+    |    + grp_ordered_mac_6_s_fu_2704                                          |     -|  3.72|       11|    110.000|         -|        1|     -|       yes|          -|   2 (~0%)|    619 (~0%)|    1030 (1%)|    -|
+    |    + grp_ordered_mac_7_s_fu_2714                                          |     -|  3.72|       11|    110.000|         -|        1|     -|       yes|          -|   2 (~0%)|    619 (~0%)|    1030 (1%)|    -|
+    |    o mac_c_mac_x_mac                                                      |     -|  9.00|        -|          -|        18|        1|     -|       yes|          -|         -|            -|            -|    -|
+    |   + grp_compute_channels_Pipeline_store_fu_896                            |     -|  0.41|      135|  1.350e+03|         -|      135|     -|        no|          -|   2 (~0%)|    380 (~0%)|     607 (1%)|    -|
+    |    o store                                                                |     -|  9.00|      133|  1.330e+03|         7|        1|   128|       yes|          -|         -|            -|            -|    -|
+    |   o channels                                                              |     -|  9.00|        -|          -|         -|        -|     -|        no|          -|         -|            -|            -|    -|
+    |    o passes                                                               |     -|  9.00|        -|          -|         -|        -|     -|        no|          -|         -|            -|            -|    -|
+    |     o tiles                                                               |     -|  9.00|        -|          -|         -|        -|     -|        no|          -|         -|            -|            -|    -|
+    |  + output_c_channel_entry_proc_fu_804                                     |     -|  9.00|        0|      0.000|         -|        0|     -|        no|          -|         -|     66 (~0%)|     19 (~0%)|    -|
+    |  + grp_write_results_fu_810                                               |     -|  0.00|        -|          -|         -|        -|     -|        no|          -|    6 (2%)|    709 (~0%)|     907 (1%)|    -|
+    |   + grp_write_results_Pipeline_VITIS_LOOP_116_3_VITIS_LOOP_116_4_fu_142   |     -|  0.00|        -|          -|         -|        -|     -|        no|          -|    3 (1%)|    349 (~0%)|    516 (~0%)|    -|
+    |    o VITIS_LOOP_116_3_VITIS_LOOP_116_4                                    |     -|  9.00|        -|          -|        10|        1|     -|       yes|          -|         -|            -|            -|    -|
+    |   o VITIS_LOOP_115_1_VITIS_LOOP_115_2                                     |     -|  9.00|        -|          -|         -|        -|     -|        no|          -|         -|            -|            -|    -|
+    | o row_pair                                                                |     -|  9.00|        -|          -|         -|        -|     -|        no|          -|         -|            -|            -|    -|
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|           | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_mem | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 64           | 64           | 4           | 4           |
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 32     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------+
+| Argument | Direction | Datatype      |
++----------+-----------+---------------+
+| input    | inout     | float const * |
+| weight   | inout     | float const * |
+| bias     | inout     | float const * |
+| output   | inout     | float*        |
+| ci       | in        | int           |
+| co       | in        | int           |
+| height   | in        | int           |
+| width    | in        | int           |
+| return   | out       | int           |
++----------+-----------+---------------+
+
+* SW-to-HW Mapping
++----------+--------------------------+-----------+----------+-----------------------+
+| Argument | HW Name                  | HW Type   | HW Usage | HW Info               |
++----------+--------------------------+-----------+----------+-----------------------+
+| input    | m_axi_mem                | interface |          |                       |
+| input    | s_axi_control input_r_1  | register  | offset   | offset=0x20, range=32 |
+| input    | s_axi_control input_r_2  | register  | offset   | offset=0x24, range=32 |
+| weight   | m_axi_mem                | interface |          |                       |
+| weight   | s_axi_control weight_1   | register  | offset   | offset=0x30, range=32 |
+| weight   | s_axi_control weight_2   | register  | offset   | offset=0x34, range=32 |
+| bias     | m_axi_mem                | interface |          |                       |
+| bias     | s_axi_control bias_1     | register  | offset   | offset=0x40, range=32 |
+| bias     | s_axi_control bias_2     | register  | offset   | offset=0x44, range=32 |
+| output   | m_axi_mem                | interface |          |                       |
+| output   | s_axi_control output_r_1 | register  | offset   | offset=0x50, range=32 |
+| output   | s_axi_control output_r_2 | register  | offset   | offset=0x54, range=32 |
+| ci       | s_axi_control ci         | register  |          | offset=0x60, range=32 |
+| co       | s_axi_control co         | register  |          | offset=0x68, range=32 |
+| height   | s_axi_control height     | register  |          | offset=0x70, range=32 |
+| width    | s_axi_control width      | register  |          | offset=0x78, range=32 |
+| return   | s_axi_control ap_return  | register  |          | offset=0x10, range=32 |
++----------+--------------------------+-----------+----------+-----------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+* Burst Summary
++--------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| HW Interface | Loop            | Message                                                                                                                                                                                                                       | Location                                                                  |
++--------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| m_axi_mem    | VITIS_LOOP_20_2 | Multiple burst reads of variable length and bit width 32. These bursts requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. | E:/FPGA_competition/AX7020_Project/platform/lung_cnn_lane8/conv.cpp:20:26 |
++--------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+
+* Bursts and Widening Missed
++--------------+----------+--------+------------------------------------------+------------+----------------------------------------------------------------------------+
+| HW Interface | Variable | Loop   | Problem                                  | Resolution | Location                                                                   |
++--------------+----------+--------+------------------------------------------+------------+----------------------------------------------------------------------------+
+| m_axi_mem    | input    | load_x | Access load is in the conditional branch | 214-232    | E:/FPGA_competition/AX7020_Project/platform/lung_cnn_lane8/conv.cpp:170:50 |
++--------------+----------+--------+------------------------------------------+------------+----------------------------------------------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+

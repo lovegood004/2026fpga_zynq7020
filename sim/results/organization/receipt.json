@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "scope": "Host exact numeric regression only, not HLS/RTL or physical throughput",
+  "source_sha256": {
+    "src/pl/hls/cnn/conv.cpp": "96dbb23ac419aa3eb9e1329248fdbe4e3817a1f76d14d2908ea2e2f7d4f74378",
+    "src/pl/hls/cnn/conv.hpp": "3933d8662ae28dc201d26f7d413f84bedbd1c782d1f372da52beb06e54668a29",
+    "sim/cnn/test_exact.cpp": "2c9f40d2e38e95229f8638c5fc7bfe3780092cd458dfd6a7972a075a0289ef5c",
+    "sim/cnn/reference.cpp": "857b5fa4c221f9b02f50c8b9284ed3f80df617e943f4c2b48582ffe7294dd399",
+    "sim/run_host.py": "4bc69b59fd936009bf775fa17d6d5ef7c1a4a2d533dd58f89418496ba0339268",
+    "data/cnn_replay/bias_a.bin": "45fffcb777e8c4698b3a3c8a1289daab2aad2ae17619c9d032f4d3bdbf9ec958",
+    "data/cnn_replay/input_a.bin": "43becc33261df2669e7b193cf517865133b6b3d31170e8e7adc275ef340d75a1",
+    "data/cnn_replay/weight_a.bin": "7a23609435d7b8e9b3febb2be4fff3b3b199d82590e600ac28706e0144fa9c74"
+  },
+  "output": "FLOW_BIT_EXACT ci=1 co=32 h=128 w=468 captured=0\nFLOW_BIT_EXACT ci=32 co=64 h=64 w=234 captured=0\nFLOW_BIT_EXACT ci=64 co=128 h=32 w=117 captured=0\nFLOW_BIT_EXACT ci=128 co=256 h=16 w=59 captured=0\nFLOW_BIT_EXACT ci=1 co=32 h=128 w=269 captured=0\nFLOW_BIT_EXACT ci=32 co=64 h=64 w=135 captured=0\nFLOW_BIT_EXACT ci=64 co=128 h=32 w=68 captured=0\nFLOW_BIT_EXACT ci=128 co=256 h=16 w=34 captured=0\nFLOW_BIT_EXACT ci=1 co=1 h=1 w=1 captured=0\nFLOW_BIT_EXACT ci=1 co=3 h=3 w=3 captured=0\nFLOW_BIT_EXACT ci=3 co=2 h=5 w=17 captured=0\nFLOW_BIT_EXACT ci=32 co=2 h=3 w=65 captured=0\nFLOW_BIT_EXACT ci=64 co=2 h=3 w=33 captured=0\nFLOW_BIT_EXACT ci=128 co=2 h=3 w=59 captured=0\nFLOW_BIT_EXACT ci=3 co=3 h=7 w=61 captured=0\nFLOW_BIT_EXACT ci=2 co=3 h=5 w=63 captured=0\nFLOW_BIT_EXACT ci=3 co=3 h=7 w=65 captured=0\nFLOW_BIT_EXACT ci=2 co=3 h=5 w=129 captured=0\nFLOW_BIT_EXACT ci=1 co=2 h=5 w=257 captured=0\nFLOW_BIT_EXACT ci=128 co=4 h=3 w=59 captured=0\nFLOW_BIT_EXACT ci=32 co=8 h=7 w=65 captured=0\nFLOW_BIT_EXACT ci=128 co=8 h=5 w=59 captured=0\nFLOW_BIT_EXACT ci=128 co=3 h=3 w=64 captured=0\nFLOW_BIT_EXACT ci=127 co=3 h=3 w=64 captured=0\nFLOW_BIT_EXACT ci=17 co=5 h=5 w=467 captured=0\nFLOW_BIT_EXACT ci=128 co=2 h=16 w=59 captured=1\nFLOW_HOST_PASS bit exact complete layers/odd shapes/captured input/invalid guards; not RTL timing\n"
+}

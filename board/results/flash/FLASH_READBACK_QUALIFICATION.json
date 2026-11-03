@@ -1,0 +1,20 @@
+{
+  "time": "2026-11-03T12:52:41.857888+08:00",
+  "passed": true,
+  "capacity_bytes": 33554432,
+  "full_readback_sha256": "da260b5b1892e94ec0b555941299f76762b8a0f6d5472d0c12ddf4a82a2f7b20",
+  "BOOT_payload_bytes": 12916548,
+  "BOOT_payload_sha256": "e82d8ae66b2c38bbf9b1573859bfc174fb93830ed891c7057b5304d367cdd0c7",
+  "native_program_and_verify_passed": true,
+  "independent_full_chip_readback_passed": true,
+  "exact_BOOT_bytes": true,
+  "exact_aligned_program_image": true,
+  "original_partial_block_tail_preserved": true,
+  "all_bytes_outside_erase_preserved": true,
+  "flash_written": true,
+  "sd_written": false,
+  "esp_written": false,
+  "cold_boot_verified": false,
+  "power_current_qualified": false,
+  "protected_folder1_and_current_release_unchanged": true
+}

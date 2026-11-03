@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "time": "2026-11-02T14:21:43+08:00",
+  "cases": 25,
+  "mismatched_words": 0,
+  "legacy_cases": 3,
+  "original_and_added_input_hashes_verified": true,
+  "compiled_simulator_hashes_verified": true,
+  "unchanged_pw_and_linear_graph_proof_verified": true,
+  "post_receipt_sha256": "23b5164ccdbcc0aa00f8cd071f4dbf9c52fcce0e9cf65b5ccde27ebb768f8e9b",
+  "full_candidate_qualified": false,
+  "power_gate_passed": false,
+  "scope": "Numeric/integrity and unchanged-core proof only; existing power screening failure prevents bit/BSP/ARM/candidate pipeline."
+}

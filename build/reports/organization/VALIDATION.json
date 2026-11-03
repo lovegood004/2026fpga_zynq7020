@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "arm_objects": 30,
+  "fsbl_objects": 12,
+  "reference_byte_exact": {
+    "application.elf": true,
+    "fsbl.elf": true,
+    "BOOT.bin": true
+  },
+  "arm_dependency_files": 104,
+  "external_arm_dependencies": [],
+  "packaged_ip_fileset_references": 762,
+  "vivado_project_creation": "PASS: BD validated and target generated; not synthesis/place/route",
+  "host_regression": "26 exact comparisons + 7 invalid geometry/guard cases PASS",
+  "historical_qor_recheck": "PASS with explicit historical exceptions and capacity-only limits",
+  "initial_fsbl_difference": "Alphabetical link order generated different FSBL; retained evidence. Fixed using original build.log link order; final ARM/FSBL/BOOT byte-exact.",
+  "limits": [
+    "No new HLS cosim or full synthesis/place/route",
+    "No new board/Flash/SD/ESP action",
+    "Adapted loader checked in PLAN only",
+    "ESP Arduino/BLE component requires external source dependency"
+  ],
+  "dependency_compiled_units": 30,
+  "dependency_method": "Actual compiler -MM on all 30 production commands; system toolchain headers excluded"
+}

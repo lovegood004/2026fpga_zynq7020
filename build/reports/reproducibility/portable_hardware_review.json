@@ -1,0 +1,9 @@
+{
+  "portable_project_created": true,
+  "all_ip_references_exist": true,
+  "ps_ddr_clocks_equal": true,
+  "external_ports_equal": true,
+  "address_declarations_equal": true,
+  "board_accessed": false,
+  "new_route_performed": false
+}

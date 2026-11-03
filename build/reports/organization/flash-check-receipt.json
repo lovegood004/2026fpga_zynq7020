@@ -1,0 +1,39 @@
+{
+  "board_accessed": false,
+  "target": "flash",
+  "passed": true,
+  "cold_boot_verified": false,
+  "bytes": 12916548,
+  "boot_sha256": "13d5b347e98d46740a78b627d93163f4fca09667cd679593e93b7da55e03b6ce",
+  "partitions": [
+    {
+      "name": "fsbl.elf",
+      "offset": 5888,
+      "bytes": 98312,
+      "load_address": "0x0",
+      "entry": "0x0",
+      "payload_sha256": "87861f069648ebc11f764d645056136a26c7b68891c48ab817869b56fed3b606",
+      "matches_input": true
+    },
+    {
+      "name": "system.bit",
+      "offset": 104256,
+      "bytes": 4045568,
+      "load_address": "0x0",
+      "entry": "0x0",
+      "payload_sha256": "ccb9d9a6465aece9699ccb73379ae3a4f1de99471294ad2b4b976d80963d08e5",
+      "matches_input": true
+    },
+    {
+      "name": "application.elf",
+      "offset": 4149824,
+      "bytes": 8766724,
+      "load_address": "0x100000",
+      "entry": "0x100000",
+      "payload_sha256": "a9cb1cebb7756ecb8af79ffb5d8f0ba43ca8a1ba7d2d64f0d57a7e79c04045f4",
+      "matches_input": true
+    }
+  ],
+  "scope": "Header checksums, names/order, bounds, ELF PT_LOAD bytes/entry and converted bit payload; no physical capacity or boot claim",
+  "matches_reference": false
+}

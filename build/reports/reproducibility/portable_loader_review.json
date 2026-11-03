@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "fault_cases": 26,
+  "actual_loader_sha256": "1469ed3614e3efc3e1a19894614bdca785f66b5c3dad255b845ab9b05374dd9f",
+  "source_mock_sha256": "bce32c002d867836ed16d66ad2946b5cc6c4ce870ab157dc9ec7a5686852ddd8",
+  "guards": "Wrong adapter, configured board, PSinit, peripherals, main readback, PC, runtime/UART/LCD/acquisition, busyCNN/Linear and path traversal rejected as applicable; no reset/START/Flash."
+}

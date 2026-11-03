@@ -1,0 +1,103 @@
+{
+  "passed": false,
+  "board_accessed": false,
+  "source_sha256": {
+    "tools/cnn_lane8_power_check.py": "fb809ea00b61d787a4708edb5f3314f721adf267e34647b457483447e758acdd",
+    "build_work/lung_cnn_lane8_20261101/power_check_v2_20261102/power.tcl": "e116be6abc2e54e12c7cb493818bfd66633caf4d2e752c2e2610820a8295080f",
+    "build_work/lung_cnn_lane8_20261101/system/system/lung_pl.runs/impl_1/design_1_wrapper_routed.dcp": "20d5253d7e63812bd73d58e22466960724b3e8e6546c1837a6708069f5269e20"
+  },
+  "report_sha256": {
+    "build_work/lung_cnn_lane8_20261101/power_check_v2_20261102/room_default.rpt": "2792b617805b658720c2500906d29f6a4944cecd9f87797307a3f90c0e96b05f",
+    "build_work/lung_cnn_lane8_20261101/power_check_v2_20261102/warm_active.rpt": "d900caaebe837ca3bc3fa11b3a1a47e295af1c09d358bb2a77267b5eab908aa2",
+    "build_work/lung_cnn_lane8_20261101/power_check_v2_20261102/warm_stress.rpt": "dd4a74a8358079f1e8d536ece7e7144f9b640f40a38635c4f0f476116a1809e6"
+  },
+  "cases": [
+    {
+      "name": "room_default",
+      "ambient_c": 25,
+      "process": "typical",
+      "toggle_percent": 12.5,
+      "total_on_chip_w": 2.681,
+      "estimated_junction_c": 63.6,
+      "estimated_shared_1v_current_a": 1.707,
+      "rails": {
+        "Vccint": 0.906,
+        "Vccaux": 0.023,
+        "Vcco33": 0.003,
+        "Vcco25": 0.0,
+        "Vcco18": 0.0,
+        "Vcco15": 0.0,
+        "Vcco135": 0.0,
+        "Vcco12": 0.0,
+        "Vccaux_io": 0.0,
+        "Vccbram": 0.022,
+        "Vccpint": 0.779,
+        "Vccpaux": 0.085,
+        "Vccpll": 0.017,
+        "Vcco_ddr": 0.459,
+        "Vcco_mio0": 0.003,
+        "Vcco_mio1": 0.004,
+        "Vccadc": 0.02
+      }
+    },
+    {
+      "name": "warm_active",
+      "ambient_c": 40,
+      "process": "maximum",
+      "toggle_percent": 50,
+      "total_on_chip_w": 6.874,
+      "estimated_junction_c": 125.0,
+      "estimated_shared_1v_current_a": 5.796,
+      "rails": {
+        "Vccint": 3.469,
+        "Vccaux": 0.215,
+        "Vcco25": 0.0,
+        "Vcco18": 0.0,
+        "Vcco15": 0.0,
+        "Vcco135": 0.0,
+        "Vcco12": 0.0,
+        "Vccaux_io": 0.0,
+        "Vccbram": 0.127,
+        "Vccpint": 2.2,
+        "Vccpaux": 0.096,
+        "Vccpll": 0.02,
+        "Vcco_ddr": 0.462,
+        "Vcco_mio0": 0.004,
+        "Vcco_mio1": 0.005,
+        "Vccadc": 0.03
+      }
+    },
+    {
+      "name": "warm_stress",
+      "ambient_c": 40,
+      "process": "maximum",
+      "toggle_percent": 100,
+      "total_on_chip_w": 8.408,
+      "estimated_junction_c": 125.0,
+      "estimated_shared_1v_current_a": 7.33,
+      "rails": {
+        "Vccint": 4.884,
+        "Vccaux": 0.215,
+        "Vcco25": 0.0,
+        "Vcco18": 0.0,
+        "Vcco15": 0.0,
+        "Vcco135": 0.0,
+        "Vcco12": 0.0,
+        "Vccaux_io": 0.0,
+        "Vccbram": 0.246,
+        "Vccpint": 2.2,
+        "Vccpaux": 0.096,
+        "Vccpll": 0.02,
+        "Vcco_ddr": 0.462,
+        "Vcco_mio0": 0.004,
+        "Vcco_mio1": 0.005,
+        "Vccadc": 0.03
+      }
+    }
+  ],
+  "physical_safety_certified": false,
+  "thermal_screening_limit_c": 75,
+  "shared_1v_screening_limit_a": 2.4,
+  "assumptions": "No heatsink, no airflow, 8-11 layer board; activity sensitivity, not a guaranteed workload upper bound. Current limit is a 20% engineering margin below the manual 3A regulator rating; actual board rail/adapter loads are not measured.",
+  "limitations": "Vectorless estimates only; no measured thermal resistance, rail transients, input adapter budget or temperature. Failed screening prevents candidate release; passed screening does not authorize deployment."
+}

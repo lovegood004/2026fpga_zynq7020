@@ -1,0 +1,17 @@
+setup_slack=0.183
+hold_slack=0.040
+drc_errors=0
+cs_guard_register_cells=16
+pl_keys_n[0] N15 IN LVCMOS33
+pl_keys_n[1] N16 IN LVCMOS33
+pl_keys_n[2] T17 IN LVCMOS33
+pl_keys_n[3] R17 IN LVCMOS33
+lcd_tri_io[0] F17 OUT LVCMOS33
+lcd_tri_io[1] F16 OUT LVCMOS33
+lcd_tri_io[2] F20 OUT LVCMOS33
+lcd_tri_io[3] F19 OUT LVCMOS33
+lcd_tri_io[4] G20 OUT LVCMOS33
+lcd_tri_io[5] G19 OUT LVCMOS33
+acq_uart_rx W19 IN LVCMOS33
+acq_uart_tx W18 OUT LVCMOS33
+top_level_ports=142

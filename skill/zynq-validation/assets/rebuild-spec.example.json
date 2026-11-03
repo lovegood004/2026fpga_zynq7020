@@ -1,0 +1,1 @@
+{"commands":[["{python}","{root}/build.py"]],"outputs":["build/results/top.bit","build/results/top.xsa"],"timeout_seconds":7200}

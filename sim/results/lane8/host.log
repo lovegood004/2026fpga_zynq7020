@@ -1,0 +1,27 @@
+FLOW_BIT_EXACT ci=1 co=32 h=128 w=468 captured=0
+FLOW_BIT_EXACT ci=32 co=64 h=64 w=234 captured=0
+FLOW_BIT_EXACT ci=64 co=128 h=32 w=117 captured=0
+FLOW_BIT_EXACT ci=128 co=256 h=16 w=59 captured=0
+FLOW_BIT_EXACT ci=1 co=32 h=128 w=269 captured=0
+FLOW_BIT_EXACT ci=32 co=64 h=64 w=135 captured=0
+FLOW_BIT_EXACT ci=64 co=128 h=32 w=68 captured=0
+FLOW_BIT_EXACT ci=128 co=256 h=16 w=34 captured=0
+FLOW_BIT_EXACT ci=1 co=1 h=1 w=1 captured=0
+FLOW_BIT_EXACT ci=1 co=3 h=3 w=3 captured=0
+FLOW_BIT_EXACT ci=3 co=2 h=5 w=17 captured=0
+FLOW_BIT_EXACT ci=32 co=2 h=3 w=65 captured=0
+FLOW_BIT_EXACT ci=64 co=2 h=3 w=33 captured=0
+FLOW_BIT_EXACT ci=128 co=2 h=3 w=59 captured=0
+FLOW_BIT_EXACT ci=3 co=3 h=7 w=61 captured=0
+FLOW_BIT_EXACT ci=2 co=3 h=5 w=63 captured=0
+FLOW_BIT_EXACT ci=3 co=3 h=7 w=65 captured=0
+FLOW_BIT_EXACT ci=2 co=3 h=5 w=129 captured=0
+FLOW_BIT_EXACT ci=1 co=2 h=5 w=257 captured=0
+FLOW_BIT_EXACT ci=128 co=4 h=3 w=59 captured=0
+FLOW_BIT_EXACT ci=32 co=8 h=7 w=65 captured=0
+FLOW_BIT_EXACT ci=128 co=8 h=5 w=59 captured=0
+FLOW_BIT_EXACT ci=128 co=3 h=3 w=64 captured=0
+FLOW_BIT_EXACT ci=127 co=3 h=3 w=64 captured=0
+FLOW_BIT_EXACT ci=17 co=5 h=5 w=467 captured=0
+FLOW_BIT_EXACT ci=128 co=2 h=16 w=59 captured=1
+FLOW_HOST_PASS bit exact complete layers/odd shapes/captured input/invalid guards; not RTL timing

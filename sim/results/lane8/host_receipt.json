@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "board_accessed": false,
+  "scope": "Exact complete-layer and boundary/8192-row/captured C results; unbounded host streams are not RTL FIFO proof.",
+  "source_sha256": {
+    "tools/cnn_lane8.py": "e59662907db1a35ac26ef873b93fc739a211954fdb08bedeecc613aa912c8df8",
+    "build_work/lung_cnn_lane8_20261101/reference.cpp": "857b5fa4c221f9b02f50c8b9284ed3f80df617e943f4c2b48582ffe7294dd399",
+    "platform/lung_cnn_lane8/conv.cpp": "96dbb23ac419aa3eb9e1329248fdbe4e3817a1f76d14d2908ea2e2f7d4f74378",
+    "platform/lung_cnn_lane8/conv.hpp": "3933d8662ae28dc201d26f7d413f84bedbd1c782d1f372da52beb06e54668a29",
+    "platform/lung_cnn_lane8/test_exact.cpp": "2c9f40d2e38e95229f8638c5fc7bfe3780092cd458dfd6a7972a075a0289ef5c",
+    "platform/lung_cnn_lane8/host/hls_stream.h": "9754ae55a33d078da679c5a8106cb45525fc60dc864e7fea9d3aae5d2a74fb6b"
+  },
+  "commands": [
+    [
+      "D:/mingw64/bin/g++.exe",
+      "-std=c++17",
+      "-O2",
+      "-Wno-unknown-pragmas",
+      "-ffp-contract=off",
+      "-fno-fast-math",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_cnn_lane8",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_fix",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_cnn_lane8\\host",
+      "-c",
+      "E:\\FPGA_competition\\AX7020_Project\\build_work\\lung_cnn_lane8_20261101\\reference.cpp",
+      "-o",
+      "E:\\FPGA_competition\\AX7020_Project\\build_work\\lung_cnn_lane8_20261101\\reference.o"
+    ],
+    [
+      "D:/mingw64/bin/g++.exe",
+      "-std=c++17",
+      "-O2",
+      "-Wno-unknown-pragmas",
+      "-ffp-contract=off",
+      "-fno-fast-math",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_cnn_lane8",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_fix",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_cnn_lane8\\host",
+      "-c",
+      "E:\\FPGA_competition\\AX7020_Project\\platform\\lung_cnn_lane8\\conv.cpp",
+      "-o",
+      "E:\\FPGA_competition\\AX7020_Project\\build_work\\lung_cnn_lane8_20261101\\lane8.o"
+    ],
+    [
+      "D:/mingw64/bin/g++.exe",
+      "-std=c++17",
+      "-O2",
+      "-Wno-unknown-pragmas",
+      "-ffp-contract=off",
+      "-fno-fast-math",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_cnn_lane8",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_fix",
+      "-IE:\\FPGA_competition\\AX7020_Project\\platform\\lung_cnn_lane8\\host",
+      "E:\\FPGA_competition\\AX7020_Project\\platform\\lung_cnn_lane8\\test_exact.cpp",
+      "E:\\FPGA_competition\\AX7020_Project\\build_work\\lung_cnn_lane8_20261101\\reference.o",
+      "E:\\FPGA_competition\\AX7020_Project\\build_work\\lung_cnn_lane8_20261101\\lane8.o",
+      "-static",
+      "-o",
+      "E:\\FPGA_competition\\AX7020_Project\\build_work\\lung_cnn_lane8_20261101\\test_exact.exe"
+    ],
+    [
+      "E:\\FPGA_competition\\AX7020_Project\\build_work\\lung_cnn_lane8_20261101\\test_exact.exe"
+    ]
+  ]
+}

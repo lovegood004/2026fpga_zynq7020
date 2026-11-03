@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "language": "zh-CN",
+  "path_base": "original AX7020_Project; evidence paths are provenance, not runtime dependencies",
+  "items": [
+    {
+      "id": "ZQ-001",
+      "category": "证据身份",
+      "title": "历史交付记录误作当前实板",
+      "trigger_conditions": [
+        "存在多个 candidate/加载记录/交付目录"
+      ],
+      "symptoms": [
+        "文档所述 ELF/bit 不一致"
+      ],
+      "diagnostic_steps": [
+        "分别读取 CURRENT_RELEASE.json、CURRENT_BOARD_STATE.json 和近期 PROJECT_STATE.md",
+        "核对相应加载 receipt 的目标板、时间、ELF/bit/XSA SHA256",
+        "冲突时记录未知项；离线文件不用于推断板上正在运行版本"
+      ],
+      "closure_criteria": [
+        "已区分交付身份、当前实板、实验候选和历史证据"
+      ],
+      "evidence": [
+        "AGENTS.md",
+        "PROJECT_STATE.md",
+        "CURRENT_RELEASE.json",
+        "skills/ax7020-heart-system/SKILL.md"
+      ],
+      "evidence_kind": "实际文档存在新旧状态冲突"
+    },
+    {
+      "id": "ZQ-002",
+      "category": "黄金参考",
+      "title": "旧 PASS 对新源码无效",
+      "trigger_conditions": [
+        "修改 RTL/HLS/驱动/网表/权重后复用旧 receipt"
+      ],
+      "symptoms": [
+        "有 passed:true 但哈希不匹配"
+      ],
+      "diagnostic_steps": [
+        "核验 source_sha256 和 report_sha256",
+        "比较输入集合本身，不能只核验交集",
+        "针对变更重跑数值/BD/实现验证并另存 receipt"
+      ],
+      "closure_criteria": [
+        "当前输入闭包与证据绑定一致"
+      ],
+      "evidence": [
+        "tools/model_evidence.py",
+        "tools/acq_evidence.py",
+        "tools/review_acq_implementation.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-003",
+      "category": "数值",
+      "title": "摘要或少量 case 掩盖错误",
+      "trigger_conditions": [
+        "仅看 cosim Pass、首尾 word 或标签"
+      ],
+      "symptoms": [
+        "部分事务正确但全输出不一致"
+      ],
+      "diagnostic_steps": [
+        "逐端口核对事务 ID、顺序、数量与长度",
+        "逐 word 比较 mem 和 ap_return；拒绝空输入、X/Z",
+        "回到形状/边界/补零/量化及浮点运算顺序定位首个差异"
+      ],
+      "closure_criteria": [
+        "预定义全部事务/全部输出一致，容差在测试前固定"
+      ],
+      "evidence": [
+        "tools/verify_cnn_reference.py",
+        "build_work/lung_fix/post_receipt.json"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-004",
+      "category": "仿真",
+      "title": "包装层通过但真实 BD 接线未验证",
+      "trigger_conditions": [
+        "仅运行单模块 testbench"
+      ],
+      "symptoms": [
+        "地址、UART 路由、复位或并发访问在整机才失败"
+      ],
+      "diagnostic_steps": [
+        "生成实际 BD 并导出仿真",
+        "补入用户 testbench，检查 PS VIP、GP0/HP0 连接",
+        "验证并发 PW/LCD、键映射、UART 路由及复位，检查本次输出"
+      ],
+      "closure_criteria": [
+        "真实生成 BD 的本轮测试通过并绑定输入"
+      ],
+      "evidence": [
+        "tools/test_acq_bd.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-005",
+      "category": "日志",
+      "title": "旧 PASS 混入本轮失败日志",
+      "trigger_conditions": [
+        "使用追加日志或复用输出目录"
+      ],
+      "symptoms": [
+        "命令失败但全文仍能搜索到 PASS"
+      ],
+      "diagnostic_steps": [
+        "保留本轮开始字节偏移或独立日志",
+        "检查本轮退出码和 Fatal",
+        "只在本轮日志段验证成功标记"
+      ],
+      "closure_criteria": [
+        "退出码、成功标记与 receipt 都来自同一轮"
+      ],
+      "evidence": [
+        "tools/test_acq_bd.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-006",
+      "category": "时序",
+      "title": "WNS 正数但 hold/脉宽仍失败",
+      "trigger_conditions": [
+        "仅检查 setup 或 HLS 估算"
+      ],
+      "symptoms": [
+        "WHS/WPWS 负数或失败端点非零"
+      ],
+      "diagnostic_steps": [
+        "使用 routed 总表",
+        "核对 WNS/WHS/WPWS、总负裕量和失败端点",
+        "核对所有 check_timing 项并定位未约束路径"
+      ],
+      "closure_criteria": [
+        "全部时序门禁满足且未约束项已关闭或精确审核"
+      ],
+      "evidence": [
+        "tools/review_acq_implementation.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-007",
+      "category": "约束",
+      "title": "继承旧工程警告例外",
+      "trigger_conditions": [
+        "复制 LCD/CDC/复位白名单到不同拓扑"
+      ],
+      "symptoms": [
+        "计数相同但对象不同，新增警告被忽略"
+      ],
+      "diagnostic_steps": [
+        "导出 IO、DRC、CDC、methodology",
+        "按规则、对象、数量核对，不只看计数",
+        "检查引脚、方向、IOSTANDARD、外设速率及复位同步；未知规则阻断"
+      ],
+      "closure_criteria": [
+        "例外有范围、理由、计数和当前设计证据"
+      ],
+      "evidence": [
+        "tools/review_acq_implementation.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-008",
+      "category": "资源",
+      "title": "综合估算代替布局布线资源",
+      "trigger_conditions": [
+        "只看 HLS LUT 或综合摘要"
+      ],
+      "symptoms": [
+        "集成后资源上涨/超预算"
+      ],
+      "diagnostic_steps": [
+        "检查 Device 和 Design State",
+        "分别核对 LUT、FF、DSP、Block RAM Tile 的 Used/Available",
+        "按目标器件容量应用预算，BRAM18 与 BRAM36 不混算"
+      ],
+      "closure_criteria": [
+        "routed 全设计资源满足预设预算"
+      ],
+      "evidence": [
+        "build_work/acq_preview/system/results/utilization.rpt",
+        "tools/review_acq_implementation.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-009",
+      "category": "接口",
+      "title": "XSA、bit、BSP 与地址不配套",
+      "trigger_conditions": [
+        "混用不同构建产物"
+      ],
+      "symptoms": [
+        "MMIO 无响应、ID 不符或驱动寄存器错位"
+      ],
+      "diagnostic_steps": [
+        "核对 XSA 内嵌 bit 与独立 bit 身份",
+        "读取 HWH/地址表，与 BSP xparameters 和驱动头比对",
+        "检查 PS DDR/时钟/AXI 地址范围、端口和器件配置"
+      ],
+      "closure_criteria": [
+        "所有产物来自匹配设计，接口身份一致"
+      ],
+      "evidence": [
+        "tools/review_acq_implementation.py",
+        "tools/create_acq_bsp.tcl"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-010",
+      "category": "缓存",
+      "title": "CPU/DDR 所有权未交接",
+      "trigger_conditions": [
+        "PS 与 PL 通过 DDR 共享缓冲"
+      ],
+      "symptoms": [
+        "旧数据、偶发错误、超时或错误结果"
+      ],
+      "diagnostic_steps": [
+        "检查缓冲地址/长度/布局与生命周期",
+        "对照生产驱动 flush、invalidate 和 barrier 的先后顺序",
+        "用分离 CPU/DDR 模型注入 timeout/bad-result，再做适用实板验证"
+      ],
+      "closure_criteria": [
+        "缓存所有权模型和故障路径通过；主机模型不冒充 Cortex 实测"
+      ],
+      "evidence": [
+        "tools/test_model_cache.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-011",
+      "category": "构建",
+      "title": "机器路径与工具版本不可移植",
+      "trigger_conditions": [
+        "换电脑或路径含中文/空格"
+      ],
+      "symptoms": [
+        "找不到编译器、头文件或 IP"
+      ],
+      "diagnostic_steps": [
+        "使用接手者本机 tools.local.json、环境变量或 PATH",
+        "核对完整 IP fileSets/BSP/权重闭包",
+        "先用 ASCII 工作目录定位工具路径问题；若使用临时 subst，要可靠清理"
+      ],
+      "closure_criteria": [
+        "新目录可构建，版本与依赖有记录，无原机器路径依赖"
+      ],
+      "evidence": [
+        "tools/portable_paths.py",
+        "tools/path_alias.py",
+        "VALIDATION.md"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-012",
+      "category": "重建",
+      "title": "把哈希完整性当成可重建证明",
+      "trigger_conditions": [
+        "只核对交付包 SHA256"
+      ],
+      "symptoms": [
+        "包完整但缺源码或独立构建结果不一致"
+      ],
+      "diagnostic_steps": [
+        "冻结全部构建输入及工具版本",
+        "在仅包含声明输入的两个新目录重建",
+        "比较产物完整字节并定位时间戳/路径/种子差异；另测功能与 STA"
+      ],
+      "closure_criteria": [
+        "明确完整性、字节可复现、功能可复现各自结论"
+      ],
+      "evidence": [
+        "VALIDATION.md",
+        "PROJECT_STATE.md"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-013",
+      "category": "性能",
+      "title": "局部加速代替整机收益",
+      "trigger_conditions": [
+        "只测某 HLS 内核或解析循环次数"
+      ],
+      "symptoms": [
+        "PL 算得快但总耗时更长"
+      ],
+      "diagnostic_steps": [
+        "固定工作量、权重、缓存冷热及输入样本",
+        "分开记录传输、PL 等待、预处理、模型、绘图和端到端",
+        "保留慢样本，并区分 RTL 周期、解析估算与实板时间"
+      ],
+      "closure_criteria": [
+        "同工作量端到端实测，覆盖范围和统计口径清楚"
+      ],
+      "evidence": [
+        "tools/compare_lung_fix.py",
+        "skills/ax7020-heart-system/SKILL.md"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-014",
+      "category": "硬件状态",
+      "title": "热加载破坏板上状态或 RAM 数据",
+      "trigger_conditions": [
+        "已配置的板卡再次运行初始化/下载"
+      ],
+      "symptoms": [
+        "录音丢失、异常复位或错误目标"
+      ],
+      "diagnostic_steps": [
+        "先确认板上 RAM 数据是否已导出和当前会话授权",
+        "离线计划核对下载器身份、ELF/bit/BSP",
+        "检查 configured/serial/readback/PC/runtime 等故障注入，不绕过加载器保护"
+      ],
+      "closure_criteria": [
+        "目标身份及状态符合本工程加载条件，本次操作被明确安排"
+      ],
+      "evidence": [
+        "AGENTS.md",
+        "tools/test_lcd_loader.py",
+        "tools/test_acq_loader.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-015",
+      "category": "启动",
+      "title": "RAM 启动等同 QSPI 冷启动",
+      "trigger_conditions": [
+        "只有 JTAG 加载成功就交付 BOOT"
+      ],
+      "symptoms": [
+        "断电后无法启动或启动旧版本"
+      ],
+      "diagnostic_steps": [
+        "核对实际 boot strap、FSBL/bit/ELF 与容量",
+        "按本工程要求备份原 Flash 并校验镜像分区、入口及边界",
+        "授权写入后独立读回和冷启动验收；SD 原卡未备份不得覆盖"
+      ],
+      "closure_criteria": [
+        "镜像审计、备份、读回、冷启动有各自证据；其他功耗门禁独立保留"
+      ],
+      "evidence": [
+        "AGENTS.md",
+        "PROJECT_STATE.md",
+        "tools/audit_boot.py"
+      ],
+      "evidence_kind": "项目防护/测试覆盖，未断言每项均发生过实板故障"
+    },
+    {
+      "id": "ZQ-016",
+      "category": "功耗",
+      "title": "数值和时序通过推导功耗通过",
+      "trigger_conditions": [
+        "实现变更后沿用旧 SAIF 或未测电流"
+      ],
+      "symptoms": [
+        "推理通过但功耗/温升结论缺证据"
+      ],
+      "diagnostic_steps": [
+        "确认活动文件对应当前网表、窗口和工作量",
+        "区分工具估计、片上温度与外部电流/功率测量",
+        "保留失败电源门禁，不用冷启动或数值通过覆盖"
+      ],
+      "closure_criteria": [
+        "当前设计按指定工况/仪器/阈值独立验收"
+      ],
+      "evidence": [
+        "PROJECT_STATE.md"
+      ],
+      "evidence_kind": "项目状态明确记载功耗/电流门禁仍未合格"
+    }
+  ]
+}
